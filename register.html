@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        select option selected {
+            color: #618512;
+        }
+    </style>
+</head>
+<body class="bg-[url('../img/register_image.png')] bg-cover">
+    <div class="absolute top-0 bg-black opacity-40 h-screen w-screen"></div>
+    <div class="flex flex-col items-start p-10 gap-10 absolute left-0 top-0 bg-white h-screen overflow-y-scroll no-scrollbar" style="width: 464px;border-radius: 0px 12px 12px 0px;" id="myDIV" onscroll="scrollbar()">
+        <img src="img/Logo-tandhur.svg" alt="Logo-tandhur" class="flex flex-row items-center gap-1 flex-none order-none grow-0" style="padding: 0px 8px 0px 0px;width: 156px;height: 52px;">
+        <div class="flex flex-col items-start p-0 gap-8 w-96 flex-none order-1 grow-0" style="height: 881px;">
+            <div class="w-96 h-14 flex-none order-none self-stretch grow-0">
+                <h1 class="w-96 h-9 left-0 -top-px not-italic font-semibold text-2xl flex items-center" style="font-family: 'Poppins';color: #151E03;">
+                    Bergabung dengan Tandhur
+                </h1>
+                <div class="h-5 left-0 not-italic font-normal text-sm flex items-center" style="width: 245px;top: 37px;font-family: 'Inter';color: #898989;">
+                    Isi data di bawah ini untuk mendaftar
+                </div>
+            </div>
+            <div class="flex flex-col items-start p-0 gap-6 w-96 flex-none order-1 self-stretch grow-0" style="height: 793px;">
+                <form action="" method="post" id="form" class="flex flex-col items-start p-0 gap-6 w-96 flex-none order-none self-stretch grow-0" style="height: 751px;">
+                    <div class="flex flex-col items-start p-0 gap-6 w-96 flex-none order-none self-stretch grow-0" style="height: 683px;">
+                        <div class="flex flex-col items-start p-0 w-96 flex-none order-none self-stretch grow-0" style="gap: 14px;height: 619px;">
+                            <div class="flex flex-col items-start p-0 w-96 flex-none order-none self-stretch grow-0" style="gap: 6px;height: 74px;">
+                                <div class="h-5 not-italic font-medium text-sm flex items-center flex-none order-none grow-0" style="width: 100px;font-family: 'Inter';color: #151E03;" onclick="myFunction()">
+                                    Daftar Sebagai
+                                </div>
+                                <input type="text" name="jenis" id="jenis" class="flex flex-row items-start gap-2 w-96 h-12 bg-white border border-solid flex-none order-1 self-stretch grow-0 focus:ring-lime-500 cursor-pointer" onclick="pilih_user()" style="padding: 14px 16px;border-color: #E1E1E1;border-radius: 5px;" value="Petani" readonly>
+                                <div class="flex relative flex-col items-start p-0 w-96 bg-white flex-none order-2 grow-0 cursor-pointer" style="box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.16);border-radius: 6px;display: none;" id="select">
+                                    <a class="flex flex-row items-start gap-2 w-96 h-12 flex-none order-none grow-0" id="petani" onmouseover="hover(this)" onmouseout="normal(this)" style="padding: 14px 16px;background: #DDF1B0;" onclick="petani_terpilih()">
+                                        <p class="h-5 font-normal text-sm flex items-center flex-none order-none grow-0" style="width: 42px;font-family: 'Inter';color: #151E03;">
+                                            Petani
+                                        </p>
+                                    </a>
+                                    <a class="flex flex-row items-start gap-2 w-96 h-12 flex-none order-1 grow-0" id="pemerintah" onmouseover="hover(this)" onmouseout="normal(this)" style="padding: 14px 16px;" onclick="pemerintah_terpilih()">
+                                        <p class="h-5 font-normal text-sm flex items-center flex-none order-none grow-0" style="width: 42px;font-family: 'Inter';color: #151E03;">
+                                            Pemerintah
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="w-5 h-5 flex-none order-3 items-center grow-0 absolute cursor-pointer" style="margin-left: 348px;margin-top: 40px;">
+                                    <img src="img/chevron_down.svg" id="down">
+                                    <img src="img/chevron_up.svg" id="up" style="display: none;">
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-start p-0 w-96 flex-none order-1 self-stretch grow-0" style="gap: 6px;height: 95px;">
+                                <div class="h-5 not-italic font-medium text-sm flex items-center flex-none order-none grow-0" style="width: 190px;font-family: 'Inter';color: #151E03;" id="title_nama">
+                                    Nama Lengkap <p style="color: #909090;">&nbsp;(Sesuai KTP)</p>
+                                </div>
+                                <input type="text" name="nama" id="nama" class="flex flex-row items-start gap-2 w-96 h-12 bg-white border border-solid flex-none order-1 self-stretch grow-0 focus:ring-lime-500" style="padding: 14px 16px;border-color: #E1E1E1;border-radius: 5px;" onkeyup="myEmpty()" onkeydown="validasi_nama()" pattern="[a-zA-Z]{2,}" placeholder="Ketik nama lengkap di sini">
+                                <div class="not-italic font-normal text-xs flex items-center flex-none order-2 grow-0" style="width: 145px;height: 15px;font-family: 'Inter';color: #B51818;display: none;" id="error_nama">
+                                    Tulis minimal 2 digit huruf
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-start p-0 w-96 flex-none order-2 self-stretch grow-0" style="gap: 6px;height: 95px;">
+                                <div class="h-5 not-italic font-medium text-sm flex items-center flex-none order-none grow-0" style="width: 111px;font-family: 'Inter';color: #151E03;" id="title_nik">
+                                    NIK atau No KTP
+                                </div>
+                                <input type="text" name="nik" id="nik" class="box-border flex flex-row items-start gap-2 w-96 h-12 bg-white border border-solid focus:ring-lime-500" style="padding: 14px 16px;border-color: #E1E1E1;border-radius: 5px;" onkeydown="validasi_nik()" onkeyup="myEmpty()" pattern="[0-9]{16}" maxlength="16" placeholder="Ketik NIK atau no KTP di sini">
+                                <div class="not-italic font-normal text-xs flex items-center flex-none order-2 grow-0" style="width: 242px;height: 15px;font-family: 'Inter';color: #B51818;display: none;" id="error_nik">
+                                    Nomor tidak sesuai, minimal 16 digit angka
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-start p-0 w-96 flex-none order-3 self-stretch grow-0" style="gap: 6px;height: 95px;">
+                                <div class="h-5 not-italic font-medium text-sm flex items-center flex-none order-none grow-0" style="width: 69px;font-family: 'Inter';color: #151E03;" id="title_hp">
+                                    Nomor HP
+                                </div>
+                                <input type="text" name="no_hp" id="no_hp" class="box-border flex flex-row items-start gap-2 w-96 h-12 bg-white border border-solid flex-none order-1 self-stretch grow-0 focus:ring-lime-500" style="padding: 14px 16px;border-color: #E1E1E1;border-radius: 5px;padding-left: 65px;" onkeydown="validasi_hp()" onkeyup="myEmpty()" pattern="[0,8][1-9][0-9]{5,}" placeholder="Ketik nomor hp di sini">
+                                <div class="w-64 not-italic font-normal text-xs flex items-center flex-none order-2 grow-0" style="height: 15px;font-family: 'Inter';color: #B51818;display: none;" id="error_hp">
+                                    Nomor HP tidak sesuai, minimal 8 digit angka
+                                </div>
+                                <span class="absolute h-5 font-normal text-sm flex items-center flex-none order-3 grow-0" style="width: 27px;font-family: 'Inter';color: #B9B9B9;padding-top: 51px;padding-left: 18px;">
+                                    +62
+                                    <span class="w-5 border border-solid flex-none order-1 self-stretch grow-0" style="border-color: #E1E1E1;transform: rotate(-90deg);background: #E1E1E1;"></span>
+                                </span>
+                                
+                            </div>
+                            <div class="flex flex-col items-start p-0 w-96 flex-none order-4 self-stretch grow-0" style="gap: 6px;height: 95px;">
+                                <div class="h-5 not-italic font-medium text-sm flex items-center flex-none order-none grow-0" style="width: 126px;font-family: 'Inter';color: #151E03;" id="title_email">
+                                    Email <p style="color: #909090;" id="ket_email">&nbsp;(Tidak wajib)</p>
+                                </div>
+                                <input type="email" name="email" id="email" class="box-border flex flex-row items-start gap-2 w-96 h-12 bg-white border border-solid flex-none order-1 self-stretch grow-0 focus:ring-lime-500" style="padding: 14px 16px;border-color: #E1E1E1;border-radius: 5px;" onkeydown="validasi_email()" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{1,}$" placeholder="Ketik email di sini" onkeyup="myEmpty()">
+                                <div class="not-italic font-normal text-xs flex items-center flex-none order-2 grow-0" style="width: 246px;height: 15px;font-family: 'Inter';color: #B51818;display: none;" id="error_email">
+                                    Format email harus seperti email@mail.com
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-start p-0 w-96 flex-none order-5 self-stretch grow-0" style="gap: 6px;height: 120px;">
+                                <div class="flex flex-row justify-between items-start p-0 w-96 h-5 flex-none order-none self-stretch grow-0" style="gap: 6px;">
+                                    <p class="h-5 not-italic font-medium text-sm flex items-center flex-none order-none grow-0" style="width: 71px;font-family: 'Inter';color: #151E03;" id="sandi">
+                                        Kata sandi
+                                    </p>
+                                    <p id="status" class="h-5 not-italic font-medium text-sm flex items-center flex-none order-1 grow-0" style="width: 85px;font-family: 'Inter';"></p>
+                                </div>
+                                <input type="password" name="password" id="password" class="box-border flex flex-row items-start gap-2 w-96 h-12 bg-white border border-solid flex-none order-1 self-stretch grow-0 focus:ring-lime-500" style="padding: 14px 16px;border-color: #E1E1E1;border-radius: 5px;" onkeydown="validasi_password()" onkeyup="myEmpty()" placeholder="Ketik kata sandi di sini" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                                <div class="not-italic font-normal text-xs flex items-center flex-none order-2 grow-0" style="width: 145px;height: 15px;font-family: 'Inter';color: #B51818;display: none;" id="error_pass">
+                                    Kata sandi minimal 8 digit
+                                </div>
+                                <div class="not-italic font-normal text-xs flex items-center flex-none order-2 grow-0 w-96" style="height: 15px;font-family: 'Inter';color: #151E03;display: none;" id="alert">
+                                    Kata sandi minimal 8 karakter berupa kombinasi angka, huruf besar dan huruf kecil.
+                                </div>
+                                <div class="mt-10 flex absolute items-center flex-none order-3 grow-0" style="margin-left: 350px;" onclick="password_show_hide()">
+                                    <img src="img/eye.svg" id="show_eye">
+                                    <img src="img/eye_off.svg" id="hide_eye" style="display: none;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-center p-0 w-96 h-10 flex-none order-1 self-stretch grow-0" style="gap: 180px;">
+                            <div class="flex flex-row items-start p-0 gap-2 w-96 h-10 flex-none order-none grow">
+                                <input type="checkbox" name="setuju" id="setuju" class="box-border w-4 h-4 bg-white border border-solid flex-none order-none grow-0 text-lime-600
+                                focus:border-lime-500
+                                focus:ring-lime-200" style="border-color: #E1E1E1;border-radius: 2px;" required>
+                                <div class="h-10 not-italic font-medium text-sm flex items-start flex-none order-1 grow" style="width: 360px;font-family: 'Inter';color: #151E03;">
+                                    <p>Saya setuju dengan <a href="#" class="show-modal" style="color: #618512;">syarat dan ketentuan</a> yang berlaku</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="flex flex-row justify-center items-center gap-2 w-96 h-11 flex-none order-1 self-stretch grow-0" style="padding: 12px 16px;background: #BFBFBF;border-radius: 5px;" id="button" onmouseover="button_hover(this)" onmouseout="button_normal(this)" onfocus="button_pressed(this)" disabled>
+                        <div class="h-5 not-italic font-semibold text-sm flex items-center text-white flex-none order-none grow-0" style="width: 71px;font-family: 'Poppins';" id="text_button">
+                            Lanjutkan
+                        </div>
+                    </button>
+                </form>
+                <div class="flex flex-row justify-center items-start p-0 gap-1 w-96 flex-none order-3 self-stretch grow-0" style="height: 18px;">
+                    <div class="not-italic font-medium text-xs flex items-center flex-none order-none grow-0" style="width: 112px;height: 18px;font-family: 'Inter';color: #898989;">
+                        Sudah punya akun?
+                    </div>
+                    <a href="index.html" class="not-italic font-semibold text-xs flex items-center flex-none order-1 grow-0" style="width: 102px;height: 18px;font-family: 'Poppins';color: #618512;">
+                        Masuk sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col items-start gap-4 absolute left-0 top-0 bg-white" style="padding: 16px 40px;width: 464px;height: 84px;box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.13);border-radius: 0px 12px 0px 0px;display: none;" id="to">
+        <img src="img/Logo-tandhur.svg" alt="Logo-tandhur" class="flex flex-row items-center gap-1 flex-none order-none grow-0" style="padding: 0px 8px 0px 0px;width: 156px;height: 52px;">
+    </div>
+    <div class="flex flex-col items-start gap-4 relative left-0 bg-white" style="padding: 16px 40px 24px;width: 464px;height: 84px;box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.13);border-radius: 0px 0px 12px 0px;top: 86vh;" id="bot">
+        <button type="submit" class="flex flex-row justify-center items-center gap-2 w-96 h-11 flex-none order-none self-stretch grow-0" style="padding: 12px 16px;background: #BFBFBF;border-radius: 5px;" id="tombol" onmouseover="button_hover1(this)" onmouseout="button_normal1(this)" onfocus="button_pressed1(this)" onclick="klik()" disabled>
+            <p class="h-5 not-italic font-semibold text-sm flex items-center flex-none order-none grow-0" style="width: 71px;font-family: 'Poppins';color: #FFFFFF;" id="ket_tombol">
+                Lanjutkan
+            </p>
+        </button>
+    </div>
+    <!-- modal S&K -->
+    <div class="modal h-screen w-screen absolute left-0 top-0 bg-black bg-opacity-50 hidden">
+        <div class="flex flex-col items-start p-8 gap-6 isolate relative bg-white" style="width: 584px;height: 598px;top: 61px;box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.1);border-radius: 12px;" id="pop-up">
+          <!-- modal body -->
+          <div class="flex flex-col items-start p-0 gap-6 flex-none order-none self-stretch grow-0 z-0 overflow-y-scroll no-scrollbar" style="height: 483px;width: 520;" id="scroll" onscroll="scrollbar()">
+            <div class="flex flex-col items-start p-0 gap-1 flex-none order-none self-stretch grow-0" style="width: 520px;height: 60px;">
+                <h1 class="h-9 flex items-center flex-none order-none self-stretch grow-0 not-italic font-semibold text-2xl" style="width: 520px;color: #151E03;font-family: 'Poppins';">Syarat dan ketentuan</h1>
+                <div class="h-5 not-italic font-normal text-sm flex items-center flex-none order-1 self-stretch grow-0" style="width: 520px;font-family: 'Inter';color: #898989;">
+                    Harap dibaca dan dipahami sebelum menyetujui syarat dan ketentuan nya.
+                </div>
+            </div>
+            <div class="flex flex-col items-start p-0 gap-1 flex-none order-1 self-stretch grow-0 h-auto" style="width: 520px;">
+                <div class="not-italic font-normal text-sm flex flex-none order-none self-stretch grow-0 h-auto" style="width: 520px;font-family: 'Inter';color: #151E03;">
+                    <p>
+                        Disarankan sebelum mengakses Situs ini lebih jauh, Anda terlebih dahulu membaca dan memahami syarat dan ketentuan yang berlaku. Syarat dan ketentuan berikut adalah ketentuan dalam pengunjungan Situs, isi dan/atau konten, layanan, serta fitur lainnya yang ada di dalam Situs. Dengan mengakses atau menggunakan Situs atau aplikasi lainnya yang disediakan oleh atau dalam Situs, berarti Anda telah memahami dan menyetujui serta terikat dan tunduk dengan segala syarat dan ketentuan yang berlaku di Situs ini.
+                        <br><br>
+                        1. DEFINISI
+                        <br><br>
+                        Setiap kata atau istilah berikut yang digunakan di dalam Syarat dan Ketentuan ini memiliki arti seperti berikut di bawah, kecuali jika kata atau istilah yang bersangkutan di dalam pemakaiannya dengan tegas menentukan lain
+                        <br><br>
+                        1.1. “Kami”, berarti PT. Aerotek Global Inovasi selaku pemilik dan pengelola Situs yang bernama Tandhur.
+                        <br><br>
+                        1.2. “Anda”, berarti tiap orang yang mengakses Situs dan menggunakan layanan dan jasa yang disediakan oleh Kami.
+                        <br><br>
+                        1.3. “Layanan”, berarti setiap dan keseluruhan jasa serta informasi yang ada pada Situs, termasuk namun tidak terbatas pada informasi yang disediakan, fitur dan layanan aplikasi, dukungan data, serta aplikasi mobile yang Kami sediakan.
+                        <br><br>
+                        1.4. “Pengguna”, berarti tiap orang yang mengakses dan menggunakan layanan dan jasa yang disediakan oleh Kami, termasuk diantaranya Pengguna Belum Terdaftar dan Pengguna Terdaftar.
+                        <br><br>
+                        1.5. "Pengguna Belum Terdaftar", berarti tiap orang yang mengakses Situs Kami dan belum melakukan registrasi.
+                        <br><br>
+                        1.6. “Pengguna Terdaftar”, berarti tiap orang yang mengakses dan menggunakan layanan dan jasa yang disediakan oleh Kami, serta telah melakukan registrasi dan memiliki akun pada Situs Kami.
+                        <br><br>
+                        1.7. “Pihak Ketiga”, berarti pihak lainnya, termasuk namun tidak terbatas pihak bank, multifinance, peer to peer lending, broker dan penyedia layanan asuransi, agen penjual efek reksa dana, transfer dana, telekomunikasi yang menyediakan layanannya dalam Situs.
+                        <br><br>
+                        1.8. “Informasi Pribadi”, berarti tiap dan seluruh data pribadi yang diberikan oleh Pengguna di Situs Kami, termasuk namun tidak terbatas pada nama lengkap, tempat dan tanggal lahir, jenis kelamin, alamat, nomor identitas, informasi debitur, kartu keluarga, akta kelahiran, surat nikah, akta, bukti kepemilikan, KTP, NPWP, surat izin usaha, surat penjaminan, data penghasilan, lokasi pengguna, kontak pengguna, serta dokumen dan data pendukung lainnya sebagaimana diminta pada ringkasan pendaftaran akun serta pada ringkasan aplikasi pengajuan.
+                        <br><br>
+                        1.9. “Konten”, berarti teks, data, informasi, angka, gambar, grafik, foto, audio, video, nama pengguna, informasi, aplikasi, tautan, komentar, peringkat, desain, atau materi lainnya yang ditampilkan pada Situs.
+                        <br><br>
+                        1.10. “Situs”, berarti www.cermati.com
+                    </p>
+                </div>
+            </div>
+          </div>
+          <div class="flex flex-row items-start gap-6 absolute bottom-0 bg-white flex-none order-2 grow-0" style="padding: 16px 40px 24px;width: 584px;height: 84px;left: calc(50% - 584px/2);box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.13);border-radius: 0px 0px 12px 12px;z-index: 2;">
+            <button class="flex flex-row justify-center items-center gap-2 w-60 h-11 bg-white flex-none order-none self-stretch grow close-modal" onmouseover="this.style.background='#DCEBBA';" onmouseout="this.style.background='#FFFFFF';" onfocus="this.style.background='#C5DE8D';" style="padding: 12px 16px;border-radius: 5px;">
+                <p class="h-5 not-italic font-semibold text-sm flex items-center flex-none order-1 grow-0" style="width: 111px;font-family: 'Poppins';color: #618512;">
+                    Tutup halaman
+                </p>
+            </button>
+            <button class="flex flex-row justify-center items-center gap-2 w-60 h-11 flex-none order-1 self-stretch grow active:bg-lime-800 setuju" onmouseover="this.style.background='#6F9815';" onmouseout="this.style.background='#7DAB18';" onfocus="this.style.background='#537210';" style="padding: 12px 16px;box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.16);border-radius: 5px;background: #7DAB18;">
+                <p class="h-5 not-italic font-semibold text-sm flex items-center flex-none order-1 grow-0" style="width: 188px;font-family: 'Poppins';color: #FFFFFF;">
+                    Setuju dan tutup halaman
+                </p>
+            </button>
+          </div>
+        </div>
+      </div>
+    <script src="js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" href="img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-[url('../img/register_image.png')] bg-cover">
+    <div class="absolute top-0 bg-black opacity-40 h-screen w-screen"></div>
+    <div class="flex flex-col items-start p-10 gap-10 absolute left-0 top-0 bg-white h-screen overflow-y-scroll no-scrollbar" style="width: 464px;border-radius: 0px 12px 12px 0px;" id="myDIV" onscroll="scrollbar()">
+        <img src="img/Logo-tandhur.svg" alt="Logo-tandhur" class="flex flex-row items-center gap-1 flex-none order-none grow-0" style="padding: 0px 8px 0px 0px;width: 156px;height: 52px;">
+        <div class="flex flex-col items-start p-0 gap-8 w-96 flex-none order-1 grow-0" style="height: 725px;">
+            <a href="#" class="flex flex-row items-start p-0 gap-2 w-24 h-6 flex-none order-none grow-0">
+                <img src="img/arrow_left.svg" alt="Back" class="w-5 h-5 flex-none order-none items-center grow-0">
+                <div class="h-6 not-italic font-semibold text-base flex items-center flex-none order-1 grow-0" style="width: 68px;font-family: 'Poppins';color: #618512;">Kembali</div>
+            </a>
+            <div class="flex flex-col items-start p-0 gap-8 w-96 flex-none order-1 grow-0" style="height: 669px;">
+                <div class="flex flex-col items-start p-0 gap-1 w-96 h-20 flex-none order-none self-stretch grow-0">
+                    <h1 class="w-96 h-9 not-italic font-semibold text-2xl flex items-center flex-none order-none self-stretch grow-0" style="font-family: 'Poppins';color: #151E03;">
+                        Selesaikan pendaftaran
+                    </h1>
+                    <div class="w-96 h-10 not-italic font-normal text-sm flex items-center flex-none order-1 self-stretch grow-0" style="font-family: 'Inter';color: #898989;">
+                        Isi data-data di bawah ini untuk menyelesaikan pendaftaran
+                    </div>
+                </div>
+                <div class="flex flex-col items-start p-0 gap-6 w-96 flex-none order-1 self-stretch grow-0" style="height: 557px;">
+                    <form action="index.html" method="post" id="form" class="flex flex-col items-start p-0 gap-6 w-96 flex-none order-none self-stretch grow-0" style="height: 578px;">
+                        <div class="flex flex-col items-start p-0 gap-4 w-96 flex-none order-none self-stretch grow-0" style="height: 489px;">
+                            <div class="flex flex-col items-start p-0 w-96 flex-none order-none self-stretch grow-0" style="height: 489px;gap: 14px;">
+                                <div class="flex flex-col items-start p-0 w-96 flex-none order-none self-stretch grow-0" style="gap: 6px;height: 74px;">
+                                    <div class="h-5 not-italic font-medium text-sm flex items-center flex-none order-none grow-0" style="width: 157px;font-family: 'Inter';color: #151E03;">
+                                        Gapoktan <p style="color: #909090;">&nbsp;(Tidak Wajib)</p>
+                                    </div>
+                                    <input type="text" name="gapoktan" id="gapoktan" class="box-border flex flex-row items-start gap-2 w-96 h-12 bg-white border border-solid flex-none order-1 self-stretch grow-0 focus:ring-lime-500" style="padding: 14px 16px;border-color: #E1E1E1;border-radius: 5px;" placeholder="Isi Gapoktan (Gabungan Kelompok Tani) di sini">
+                                </div>
+                                <div class="flex flex-col items-start p-0 w-96 flex-none order-1 self-stretch grow-0" style="gap: 6px;height: 95px;">
+                                    <div class="h-5 not-italic font-medium text-sm flex items-center flex-none order-none grow-0" style="width: 140px;font-family: 'Inter';color: #151E03;" id="title_kota">
+                                        Kabupaten atau Kota
+                                    </div>
+                                    <input type="text" name="kota" id="kota" class="box-border flex flex-row justify-between items-start gap-2 w-96 h-12 bg-white border border-solid flex-none order-1 self-stretch grow-0 focus:ring-lime-500" style="padding: 14px 16px;border-color: #E1E1E1;border-radius: 5px;" placeholder="Pilih atau ketik nama kabupaten" onkeyup="myEmptyPetani()" onclick="pilih_kota()" onkeydown="validasi_kota()">
+                                    <input type="hidden" name="id_kota" id="id_kota">
+                                    <div class="relative flex flex-col items-start p-0 w-96 h-72 bg-white flex-none order-2 grow-0 overflow-y-scroll no-scrollbar" style="box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.16);border-radius: 6px;display: none;" id="select_kota"></div>
+                                    <div class="not-italic font-normal text-xs flex items-center flex-none order-3 grow-0" style="width: 204px;height: 15px;font-family: 'Inter';color: #B51818;display: none;" id="error_kota">
+                                        Pilih salah satu kabupaten atau kota
+                                    </div>
+                                    <div class="w-5 h-5 flex-none order-4 items-center grow-0 absolute cursor-pointer" style="margin-left: 348px;margin-top: 40px;">
+                                        <img src="img/chevron_down.svg" id="down_kota">
+                                        <img src="img/chevron_up.svg" id="up_kota" style="display: none;">
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-start p-0 w-96 flex-none order-2 self-stretch grow-0" style="gap: 6px;height: 95px;">
+                                    <div class="h-5 not-italic font-medium text-sm flex items-center flex-none order-none grow-0" style="width: 75px;font-family: 'Inter';color: #151E03;" id="title_kecamatan">
+                                        Kecamatan
+                                    </div>
+                                    <input type="text" name="kecamatan" id="kecamatan" class="box-border flex flex-row justify-between items-start gap-2 w-96 h-12 bg-white border border-solid flex-none order-1 self-stretch grow-0 focus:ring-lime-500" style="padding: 14px 16px;border-color: #E1E1E1;border-radius: 5px;" placeholder="Pilih atau ketik nama kecamatan" onkeyup="myEmptyPetani()" onclick="pilih_kecamatan()" onkeydown="validasi_kecamatan()">
+                                    <input type="hidden" name="id_kecamatan" id="id_kecamatan">
+                                    <div class="relative flex flex-col items-start p-0 w-96 h-72 bg-white flex-none order-2 grow-0 overflow-y-scroll no-scrollbar" style="box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.16);border-radius: 6px;display: none;" id="select_kecamatan"></div>
+                                    <div class="not-italic font-normal text-xs flex items-center flex-none order-3 grow-0" style="width: 150px;height: 15px;font-family: 'Inter';color: #B51818;display: none;" id="error_kecamatan">
+                                        Pilih salah satu kecamatan
+                                    </div>
+                                    <div class="w-5 h-5 flex-none order-4 items-center grow-0 absolute cursor-pointer" style="margin-left: 348px;margin-top: 40px;">
+                                        <img src="img/chevron_down.svg" id="down_kecamatan">
+                                        <img src="img/chevron_up.svg" id="up_kecamatan" style="display: none;">
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-start p-0 w-96 flex-none order-3 self-stretch grow-0" style="gap: 6px;height: 95px;">
+                                    <div class="h-5 not-italic font-medium text-sm flex items-center flex-none order-none grow-0" style="width: 34px;font-family: 'Inter';color: #151E03;" id="title_desa">
+                                        Desa
+                                    </div>
+                                    <input type="text" name="desa" id="desa" class="box-border flex flex-row justify-between items-start gap-2 w-96 h-12 bg-white border border-solid flex-none order-1 self-stretch grow-0 focus:ring-lime-500" style="padding: 14px 16px;border-color: #E1E1E1;border-radius: 5px;" placeholder="Pilih atau ketik nama desa" onkeyup="myEmptyPetani()" onclick="pilih_desa()" onkeydown="validasi_desa()">
+                                    <input type="hidden" name="id_desa" id="id_desa">
+                                    <div class="relative flex flex-col items-start p-0 w-96 h-72 bg-white flex-none order-2 grow-0 overflow-y-scroll no-scrollbar" style="box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.16);border-radius: 6px;display: none;" id="select_desa"></div>
+                                    <div class="not-italic font-normal text-xs flex items-center flex-none order-2 grow-0" style="width: 115px;height: 15px;font-family: 'Inter';color: #B51818;display: none;" id="error_desa">
+                                        Pilih salah satu desa
+                                    </div>
+                                    <div class="w-5 h-5 flex-none order-4 items-center grow-0 absolute cursor-pointer" style="margin-left: 348px;margin-top: 40px;">
+                                        <img src="img/chevron_down.svg" id="down_desa">
+                                        <img src="img/chevron_up.svg" id="up_desa" style="display: none;">
+                                    </div>
+                                </div>
+                                <div class="flex flex-col items-start p-0 w-96 flex-none order-4 self-stretch grow-0" style="gap: 6px;height: 74px;">
+                                    <div class="h-5 not-italic font-medium text-sm flex items-center flex-none order-none grow-0" style="width: 137px;font-family: 'Inter';color: #151E03;">
+                                        Alamat <p style="color: #909090;">&nbsp;(Sesuai KTP)</p>
+                                    </div>
+                                    <input type="text" name="alamat" id="alamat" class="box-border flex flex-row items-start gap-2 w-96 h-12 bg-white border border-solid flex-none order-1 self-stretch grow-0 focus:ring-lime-500" style="padding: 14px 16px;border-color: #E1E1E1;border-radius: 5px;" placeholder="Contoh: Lugu, RT.001/RW.002, Kec. Butuh, Kab. Purworejo, Jawa Tengah" onkeyup="myEmptyPetani()">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-start p-0 gap-4 w-96 h-11 flex-none order-1 self-stretch grow-0">
+                            <button type="submit" class="flex flex-row justify-center items-center gap-2 w-96 h-11 flex-none order-none self-stretch grow-0" style="padding: 12px 16px;background: #BFBFBF;border-radius: 5px;" id="button" onmouseover="button_hover(this)" onmouseout="button_normal(this)" onfocus="button_pressed(this)" disabled>
+                                <p class="h-5 not-italic font-semibold text-sm flex items-center flex-none order-none grow-0" style="width: 131px;font-family: 'Poppins';color: #FFFFFF;">
+                                    Selesai dan Daftar
+                                </p>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col items-start gap-4 absolute left-0 bg-white" style="padding: 16px 40px 24px;width: 464px;height: 84px;top: 86vh;box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.13);border-radius: 0px 0px 12px 0px;" id="bot">
+        <button type="submit" class="flex flex-row justify-center items-center gap-2 w-96 h-11 flex-none order-none self-stretch grow-0" style="padding: 12px 16px;background: #BFBFBF;border-radius: 5px;" id="tombol" onmouseover="button_hover1(this)" onmouseout="button_normal1(this)" onfocus="button_pressed1(this)" onclick="klik()" disabled>
+            <p class="h-5 not-italic font-semibold text-sm flex items-center flex-none order-none grow-0" style="width: 131px;font-family: 'Poppins';color: #FFFFFF;">
+                Selesai dan Daftar
+            </p>
+        </button>
+    </div>
+    <div class="flex flex-col items-start gap-4 absolute left-0 top-0 bg-white" style="padding: 16px 40px;width: 464px;height: 84px;box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.13);border-radius: 0px 12px 0px 0px;display: none;" id="to">
+        <img src="img/Logo-tandhur.svg" alt="Logo-tandhur" class="flex flex-row items-center gap-1 flex-none order-none grow-0" style="padding: 0px 8px 0px 0px;width: 156px;height: 52px;">
+    </div>
+    <script src="js/next.js"></script>
+</body>
+</html>
