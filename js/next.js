@@ -131,6 +131,8 @@ function scrollbar() {
       data += "<a class=\"flex flex-row items-start gap-2 w-96 h-12 flex-none grow-0 cursor-pointer\" onmouseover=\"hover_kota(this)\" onmouseout=\"normal_kota(this)\" style=\"padding: 14px 16px;\" id=\""+ kota[i].id +"\" onclick=\"kota_terpilih(this)\"><p class=\"h-5 font-normal text-sm flex items-center flex-none order-none grow-0\" style=\"width: 302px;font-family: 'Inter';color: #151E03;\">" + kota[i].name + "</p></a>";
     }
     document.getElementById("select_kota").innerHTML = data;
+    document.getElementById("icon_kecamatan").classList.add("hidden");
+    document.getElementById("icon_desa").classList.add("hidden");
   }
 
   function validasi_kota() {
@@ -180,6 +182,8 @@ function scrollbar() {
     name.classList.add("focus:ring-lime-500");
     name.classList.remove("focus:ring-red-500");
     title.style.color = "#151E03";
+    document.getElementById("icon_kecamatan").classList.remove("hidden");
+    document.getElementById("icon_desa").classList.remove("hidden");
   }
 
   function hover_kota(x) {
@@ -224,9 +228,6 @@ function scrollbar() {
   })
 
   function pilih_kecamatan() {
-    document.getElementById("select_kecamatan").style.display = "";
-    document.getElementById("up_kecamatan").style.display = "";
-    document.getElementById("down_kecamatan").style.display = "none";
     var data = "";
     for (let i = 0; i < kecamatan.length; i++) {
       if (kecamatan[i].regency_id == document.getElementById("id_kota").value) {
@@ -235,8 +236,13 @@ function scrollbar() {
     }
     if (data == "") {
       document.getElementById("select_kecamatan").style.display = "none";
+      document.getElementById("up_kecamatan").style.display = "none";
+    document.getElementById("down_kecamatan").style.display = "";
     } else {
       document.getElementById("select_kecamatan").style.display = "";
+      document.getElementById("up_kecamatan").style.display = "";
+      document.getElementById("down_kecamatan").style.display = "none";
+      document.getElementById("icon_desa").classList.add("hidden");
     }
     document.getElementById("select_kecamatan").innerHTML = data;
   }
@@ -288,6 +294,7 @@ function scrollbar() {
     name.classList.add("focus:ring-lime-500");
     name.classList.remove("focus:ring-red-500");
     title.style.color = "#151E03";
+    document.getElementById("icon_desa").classList.remove("hidden");
   }
 
   function hover_kecamatan(x) {
@@ -332,9 +339,6 @@ function scrollbar() {
   })
 
   function pilih_desa() {
-    document.getElementById("select_desa").style.display = "";
-    document.getElementById("up_desa").style.display = "";
-    document.getElementById("down_desa").style.display = "none";
     var data = "";
     for (let i = 0; i < desa.length; i++) {
       if (desa[i].district_id == document.getElementById("id_kecamatan").value) {
@@ -343,8 +347,12 @@ function scrollbar() {
     }
     if (data == "") {
       document.getElementById("select_desa").style.display = "none";
+      document.getElementById("up_desa").style.display = "none";
+      document.getElementById("down_desa").style.display = "";
     } else {
       document.getElementById("select_desa").style.display = "";
+      document.getElementById("up_desa").style.display = "";
+      document.getElementById("down_desa").style.display = "none";
     }
     document.getElementById("select_desa").innerHTML = data;
   }

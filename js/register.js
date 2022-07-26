@@ -24,14 +24,16 @@ function password_show_hide() {
     if (password.match(pattern)) {
       form.classList.add("valid");
       form.classList.remove("invalid");
-      text.style.display = "none";
+      text.style.color = "#151E03";
+      text.innerHTML = "Kata sandi minimal 8 karakter berupa kombinasi angka, huruf besar dan huruf kecil.";
       pass.classList.add("focus:ring-lime-500");
       pass.classList.remove("focus:ring-red-500");
       sandi.style.color = "#151E03";
     } else {
       form.classList.remove("valid");
       form.classList.add("invalid");
-      text.style.display = "";
+      text.style.color = "#B51818";
+      text.innerHTML = "Kata sandi minimal 8 digit";
       pass.classList.remove("focus:ring-lime-500");
       pass.classList.add("focus:ring-red-500");
       sandi.style.color = "#B51818";
@@ -40,7 +42,8 @@ function password_show_hide() {
     if (password === "") {
       form.classList.remove("valid");
       form.classList.remove("invalid");
-      text.style.display = "none";
+      text.style.color = "#151E03";
+      text.innerHTML = "Kata sandi minimal 8 karakter berupa kombinasi angka, huruf besar dan huruf kecil.";
       pass.classList.add("focus:ring-lime-500");
       pass.classList.remove("focus:ring-red-500");
       sandi.style.color = "#151E03";
@@ -255,8 +258,6 @@ function password_show_hide() {
   function passwordStrength(p){
     var status = document.getElementById('status');
     var sandi = document.getElementById('password').value;
-    var text = document.getElementById("error_pass");
-    var alert = document.getElementById("alert");
 
     var regex = new Array();
     regex.push("[A-Z]");
@@ -272,7 +273,6 @@ function password_show_hide() {
 
     var strength = null;
     var color = null;
-    var display = null;
 
     if (sandi.length > 7) {
       switch(passed){
@@ -281,25 +281,20 @@ function password_show_hide() {
         case 1:
           strength = "Kurang Kuat";
           color = "#B51818";
-          display = "";
           break;
         case 2:
           strength = "Cukup Kuat";
           color = "#FAB400";
-          display = "";
           break;
         case 3:
           strength = "Sangat Kuat";
           color = "#0FB700";
-          display = "none";
       }
     }
     if (sandi.length < 9) {
       status.innerHTML = "";
-      alert.style.display = "none";
     } else {
       status.innerHTML = strength;
-      alert.style.display = display;
       status.style.color = color;
     }
   }

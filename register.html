@@ -14,16 +14,13 @@
         .no-scrollbar::-webkit-scrollbar {
             display: none;
         }
-        select option selected {
-            color: #618512;
-        }
     </style>
 </head>
 <body class="bg-[url('../img/register_image.png')] bg-cover">
     <div class="absolute top-0 bg-black opacity-40 h-screen w-screen"></div>
     <div class="flex flex-col items-start p-10 gap-10 absolute left-0 top-0 bg-white h-screen overflow-y-scroll no-scrollbar" style="width: 464px;border-radius: 0px 12px 12px 0px;" id="myDIV" onscroll="scrollbar()">
         <img src="img/Logo-tandhur.svg" alt="Logo-tandhur" class="flex flex-row items-center gap-1 flex-none order-none grow-0" style="padding: 0px 8px 0px 0px;width: 156px;height: 52px;">
-        <div class="flex flex-col items-start p-0 gap-8 w-96 flex-none order-1 grow-0" style="height: 881px;">
+        <div class="flex flex-col items-start p-0 gap-8 w-96 flex-none order-1 grow-0" style="height: 912px;">
             <div class="w-96 h-14 flex-none order-none self-stretch grow-0">
                 <h1 class="w-96 h-9 left-0 -top-px not-italic font-semibold text-2xl flex items-center" style="font-family: 'Poppins';color: #151E03;">
                     Bergabung dengan Tandhur
@@ -32,11 +29,11 @@
                     Isi data di bawah ini untuk mendaftar
                 </div>
             </div>
-            <div class="flex flex-col items-start p-0 gap-6 w-96 flex-none order-1 self-stretch grow-0" style="height: 793px;">
-                <form action="" method="post" id="form" class="flex flex-col items-start p-0 gap-6 w-96 flex-none order-none self-stretch grow-0" style="height: 751px;">
-                    <div class="flex flex-col items-start p-0 gap-6 w-96 flex-none order-none self-stretch grow-0" style="height: 683px;">
-                        <div class="flex flex-col items-start p-0 w-96 flex-none order-none self-stretch grow-0" style="gap: 14px;height: 619px;">
-                            <div class="flex flex-col items-start p-0 w-96 flex-none order-none self-stretch grow-0" style="gap: 6px;height: 74px;">
+            <div class="flex flex-col items-start p-0 gap-6 w-96 flex-none order-1 self-stretch grow-0" style="height: 824px;">
+                <form action="" method="post" id="form" class="flex flex-col items-start p-0 gap-6 w-96 flex-none order-none self-stretch grow-0" style="height: 782px;">
+                    <div class="flex flex-col items-start p-0 gap-6 w-96 flex-none order-none self-stretch grow-0" style="height: 714px;">
+                        <div class="flex flex-col items-start p-0 w-96 flex-none order-none self-stretch grow-0" style="gap: 14px;height: 650px;">
+                            <div class="flex flex-col items-start p-0 w-96 flex-none order-none self-stretch grow-0" style="gap: 6px;height: 95px;">
                                 <div class="h-5 not-italic font-medium text-sm flex items-center flex-none order-none grow-0" style="width: 100px;font-family: 'Inter';color: #151E03;" onclick="myFunction()">
                                     Daftar Sebagai
                                 </div>
@@ -99,7 +96,7 @@
                                     Format email harus seperti email@mail.com
                                 </div>
                             </div>
-                            <div class="flex flex-col items-start p-0 w-96 flex-none order-5 self-stretch grow-0" style="gap: 6px;height: 120px;">
+                            <div class="flex flex-col items-start p-0 w-96 flex-none order-5 self-stretch grow-0" style="gap: 6px;height: 105px;">
                                 <div class="flex flex-row justify-between items-start p-0 w-96 h-5 flex-none order-none self-stretch grow-0" style="gap: 6px;">
                                     <p class="h-5 not-italic font-medium text-sm flex items-center flex-none order-none grow-0" style="width: 71px;font-family: 'Inter';color: #151E03;" id="sandi">
                                         Kata sandi
@@ -107,10 +104,7 @@
                                     <p id="status" class="h-5 not-italic font-medium text-sm flex items-center flex-none order-1 grow-0" style="width: 85px;font-family: 'Inter';"></p>
                                 </div>
                                 <input type="password" name="password" id="password" class="box-border flex flex-row items-start gap-2 w-96 h-12 bg-white border border-solid flex-none order-1 self-stretch grow-0 focus:ring-lime-500" style="padding: 14px 16px;border-color: #E1E1E1;border-radius: 5px;" onkeydown="validasi_password()" onkeyup="myEmpty()" placeholder="Ketik kata sandi di sini" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}">
-                                <div class="not-italic font-normal text-xs flex items-center flex-none order-2 grow-0" style="width: 145px;height: 15px;font-family: 'Inter';color: #B51818;display: none;" id="error_pass">
-                                    Kata sandi minimal 8 digit
-                                </div>
-                                <div class="not-italic font-normal text-xs flex items-center flex-none order-2 grow-0 w-96" style="height: 15px;font-family: 'Inter';color: #151E03;display: none;" id="alert">
+                                <div class="not-italic font-normal text-xs flex flex-none order-2 grow-0 w-96" style="height: 25px;font-family: 'Inter';color: #151E03;" id="error_pass">
                                     Kata sandi minimal 8 karakter berupa kombinasi angka, huruf besar dan huruf kecil.
                                 </div>
                                 <div class="mt-10 flex absolute items-center flex-none order-3 grow-0" style="margin-left: 350px;" onclick="password_show_hide()">
@@ -150,12 +144,20 @@
     <div class="flex flex-col items-start gap-4 absolute left-0 top-0 bg-white" style="padding: 16px 40px;width: 464px;height: 84px;box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.13);border-radius: 0px 12px 0px 0px;display: none;" id="to">
         <img src="img/Logo-tandhur.svg" alt="Logo-tandhur" class="flex flex-row items-center gap-1 flex-none order-none grow-0" style="padding: 0px 8px 0px 0px;width: 156px;height: 52px;">
     </div>
-    <div class="flex flex-col items-start gap-4 relative left-0 bg-white" style="padding: 16px 40px 24px;width: 464px;height: 84px;box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.13);border-radius: 0px 0px 12px 0px;top: 86vh;" id="bot">
+    <div class="flex flex-col items-start gap-4 relative left-0 bg-white" style="padding: 16px 40px 24px;width: 464px;height: 110px;box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.13);border-radius: 0px 0px 12px 0px;top: 85.2vh;" id="bot">
         <button type="submit" class="flex flex-row justify-center items-center gap-2 w-96 h-11 flex-none order-none self-stretch grow-0" style="padding: 12px 16px;background: #BFBFBF;border-radius: 5px;" id="tombol" onmouseover="button_hover1(this)" onmouseout="button_normal1(this)" onfocus="button_pressed1(this)" onclick="klik()" disabled>
             <p class="h-5 not-italic font-semibold text-sm flex items-center flex-none order-none grow-0" style="width: 71px;font-family: 'Poppins';color: #FFFFFF;" id="ket_tombol">
                 Lanjutkan
             </p>
         </button>
+        <div class="flex flex-row justify-center items-start p-0 gap-1 w-96 flex-none order-1 self-stretch grow-0" style="height: 18px;">
+            <div class="not-italic font-medium text-xs flex items-center flex-none order-none grow-0" style="width: 112px;height: 18px;font-family: 'Inter';color: #898989;">
+                Sudah punya akun?
+            </div>
+            <a href="index.html" class="not-italic font-semibold text-xs flex items-center flex-none order-1 grow-0" style="width: 102px;height: 18px;font-family: 'Poppins';color: #618512;">
+                Masuk sekarang
+            </a>
+        </div>
     </div>
     <!-- modal S&K -->
     <div class="modal h-screen w-screen absolute left-0 top-0 bg-black bg-opacity-50 hidden">
