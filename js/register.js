@@ -351,6 +351,7 @@ function password_show_hide() {
     var nilai = document.getElementById("pemerintah").innerText;
     document.getElementById("select").style.display = "none";
     document.getElementById("jenis").value = nilai;
+    document.getElementById("jenis").focus();
     document.getElementById("ket_email").style.display = "none";
     document.getElementById("text_button").innerText = "Daftar";
     document.getElementById("ket_tombol").innerText = "Daftar";
@@ -430,3 +431,12 @@ function password_show_hide() {
   }
 
   document.getElementById("pop-up").style.margin = "0 auto";
+
+  document.getElementById("up").addEventListener("click", tutup);
+  document.getElementById("down").addEventListener("click", pilih_user);
+
+  function tutup() {
+    document.getElementById("select").style.display = "none";
+    document.getElementById("down").style.display = "";
+    document.getElementById("up").style.display = "none";
+  }

@@ -813,6 +813,10 @@ select {
   display: none;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -1003,8 +1007,24 @@ select {
   background-image: url('../img/register_image.png');
 }
 
+.bg-\[url\(\'\.\.\/img\/Register-image\.png\'\)\] {
+  background-image: url('../img/Register-image.png');
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-10 {

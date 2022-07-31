@@ -423,3 +423,37 @@ function scrollbar() {
       x.style.background = "#FFFFFF";
     }
   }
+
+  if (screen.availHeight >= 940) {
+    document.getElementById("bot").style.display = "none";
+  }
+
+  document.getElementById("up_kota").addEventListener("click", tutup_kota);
+  document.getElementById("down_kota").addEventListener("click", pilih_kota);
+
+  function tutup_kota() {
+    document.getElementById("select_kota").style.display = "none";
+    document.getElementById("down_kota").style.display = "";
+    document.getElementById("up_kota").style.display = "none";
+    document.getElementById("icon_kecamatan").classList.remove("hidden");
+    document.getElementById("icon_desa").classList.remove("hidden");
+  }
+
+  document.getElementById("up_kecamatan").addEventListener("click", tutup_kecamatan);
+  document.getElementById("down_kecamatan").addEventListener("click", pilih_kecamatan);
+
+  function tutup_kecamatan() {
+    document.getElementById("select_kecamatan").style.display = "none";
+    document.getElementById("down_kecamatan").style.display = "";
+    document.getElementById("up_kecamatan").style.display = "none";
+    document.getElementById("icon_desa").classList.remove("hidden");
+  }
+
+  document.getElementById("up_desa").addEventListener("click", tutup_desa);
+  document.getElementById("down_desa").addEventListener("click", pilih_desa);
+
+  function tutup_desa() {
+    document.getElementById("select_desa").style.display = "none";
+    document.getElementById("down_desa").style.display = "";
+    document.getElementById("up_desa").style.display = "none";
+  }
