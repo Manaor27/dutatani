@@ -440,3 +440,7 @@ function password_show_hide() {
     document.getElementById("down").style.display = "";
     document.getElementById("up").style.display = "none";
   }
+
+  if (screen.availHeight >= 1090) {
+    document.getElementById("bot").style.display = "none";
+  }
