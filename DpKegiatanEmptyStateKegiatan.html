@@ -31,78 +31,78 @@
  
 </head>
 <body>
-  <div class="h-full shadow-[-2px_0px_40px_rgba(0,0,0,0.04)] bg-white px-1 border-r border-[#EEEEEE] fixed w-[220px]" id="sidenavExample">
-    <img class="flex-none -order-none self-stretch flex-grow-0 flex flex-row items-center mt-6 mb-6 w-[220px] h-[52px]" src="Aset/Logo-tandhur.svg">
-
-    <div class="flex justify-center">
-      <div class="w-[172px] h-[62px] px-3 py-3 gap-1 mb-6 bg-white border-x border-y border-[rgba(185,185,185,0.2)]
-      shadow-[0_12px_32px_rgba(0,0,0,0.07)] rounded-lg">
-        <div class="w-6 h-6 bg-[rgba(68,194,253,0.5)] border-x-[0.8px] border-y-[0.8px] border-[#3895C1] rounded-[40px] absolute text-center mt-2">
-          <p class="font-['Poppins'] not-italic font-[600] text-[10px] leading-[18px] text-[#3895C1] py-[2px]">AS</p>
-        </div>
-          <p class="font-['Poppins'] not-italic font-[600] text-[14px] leading-5 text-[#151E03] text-right"
-          >Ahmad Subarjo</p>
-          <p class="font-['Inter'] not-italic font-[400] text-[12px] leading-[18px] text-[#898989] text-right mr-[75px]">Petani</p>
-      </div>
-    </div>
-
-      <ul class="relative">
-        <li class="relative w-[215px]" id="sidenavEx1">
-          <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden active cursor-pointer" data-mdb-ripple="true" data-mdb-ripple-color="" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
-            <img src="Aset/home_alt_fill.svg" class="w-[20px] h-[20px] mr-2">
-            <span class="font-['Poppins'] not-italic font-[600] text-[14px] leading-5 text-[#151E03]">Beranda</span>
-          </a>
-        </li>
-
-        <li class="relative w-[215px]" id="sidenavEx1">
-          <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden cursor-pointer" data-mdb-ripple="true" data-mdb-ripple-color="" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx1" aria-expanded="true" aria-controls="collapseSidenavEx1">
-            <img src="Aset/file_blank_fill.svg" class="w-[20px] h-[20px] mr-2">
-            <span class="font-['Poppins'] not-italic font-[600] text-[14px] leading-5 text-[#151E03]">Data Lahan</span>
-          </a>
-        </li>
-
-        <li class="relative w-[215px]" id="sidenavEx3">
-          <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden cursor-pointer" data-mdb-ripple="true" data-mdb-ripple-color="" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx3" aria-expanded="false" aria-controls="collapseSidenavEx3">
-            <img src="Aset/bar_chart.svg" class="w-[20px] h-[20px] mr-2">
-            <span class="font-['Poppins'] not-italic font-[600] text-[14px] leading-5 text-[#151E03]">Siklus Tanam</span>
-            <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 ml-auto rotate-180" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
-            </svg>
-          </a>
-          
-          <ul class="relative accordion-collapse collapse show" id="collapseSidenavEx3" aria-labelledby="sidenavEx3" data-bs-parent="#sidenavExample">
-            <li class="relative w-[215px]">
-              <a href="#!" class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden cursor-pointer font-['Poppins'] not-italic font-[600] text-[14px] leading-5 text-[#537210] bg-[#DCEBBA]" data-mdb-ripple="true" data-mdb-ripple-color="">
-              <div class="border-x border-y border-[#537210] rounded-[32px] -rotate-90 w-[21px] h-0 ml-[20px]">
-              </div>Kegiatan 
+    <div class="fixed">
+      <aside class="w-[220px] absolute border-r box-border shadow-[-2px_0px_40px_rgba(0,0,0,0.04)]" aria-label="Sidebar">
+          <div class="py-4 rounded min-h-screen w-[220px]">
+              <a href="#" class="flex items-center pl-2.5 mb-5 w-[220px] h-[52px]">
+                  <img src="Aset/Logo-tandhur.svg" alt="Logo-tandhur" />
               </a>
-            </li>
-
-            <li class="relative w-[215px]">
-              <a href="#!" class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden cursor-pointer font-['Poppins'] not-italic font-[600] text-[14px] leading-5 text-[#151E03]" data-mdb-ripple="true" data-mdb-ripple-color="">
-               <div class="border-x border-y border-[#151E03] rounded-[32px] -rotate-90 w-[21px] h-0 ml-[20px]">
-               </div>Riwayat 
-               </a>
-            </li>
-          </ul>
-
-          <hr class="mt-[33px] mb-[33px] border-x border-y border-[#EEEEEE] rounded-[32px] w-[172px] h-0 ml-6 mr-6">
-
-          <li class="relative w-[215px]" id="sidenavEx2">
-          <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden cursor-pointer" data-mdb-ripple="true" data-mdb-ripple-color="" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx2" aria-expanded="false" aria-controls="collapseSidenavEx2">
-            <img src="Aset/refresh.svg" class="w-[20px] h-[20px] mr-2">
-            <span class="font-['Poppins'] not-italic font-[600] text-[14px] leading-5 text-[#151E03]">Ubah Kata Sandi</span>
-          </a>
-        </li>
-
-        <li class="relative w-[215px]" id="sidenavEx2">
-          <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden cursor-pointer" data-mdb-ripple="true" data-mdb-ripple-color="" data-bs-toggle="collapse" data-bs-target="#collapseSidenavEx2" aria-expanded="false" aria-controls="collapseSidenavEx2">
-            <img src="Aset/exit.svg" class="w-[20px] h-[20px] mr-2">
-            <span class="font-['Poppins'] not-italic font-[600] text-[14px] leading-5 text-[#151E03]">Keluar</span>
-          </a>
-        </li>
-        </li>
-      </ul>
+              <div class="flex flex-col items-start p-[0px_24px] gap-2 w-[220px] h-[62px] flex-none order-1 self-stretch grow-0">
+                  <div class="flex flex-col items-start pt-[10px] pl-3 gap-1 w-[172px] h-[62px] bg-[#FFFFFF] border border-solid border-[rgba(185,185,185,0.2)] shadow-[0px_12px_32px_rgba(0,0,0,0.07)] rounded-lg flex-none order-none self-stretch grow-0">
+                      <div class="flex flex-row items-center p-0 gap-2 flex-none order-none self-stretch grow-0 w-[148px] h-[38px]">
+                          <div class="w-6 h-6 flex-none order-none grow-0 rounded-[40px] border-[0.8px] border-solid border-[#3895C1] bg-[rgba(68,194,253,0.5)]">
+                              <p class="font-[Poppins] not-italic font-semibold text-[10px] leading-[18px] flex items-center text-center text-[#3895C1] pl-[20.83%] pt-[10.42%]">
+                                  AS
+                              </p>
+                          </div>
+                          <div class="flex flex-col items-start p-0 flex-none order-1 grow">
+                              <div class="h-5 not-italic font-semibold text-sm flex items-center flex-none order-none self-stretch grow-0 text-[#151E03] font-[Poppins]">
+                                  Ahmad Subarjo
+                              </div>
+                              <div class="not-italic font-normal text-xs flex items-center flex-none order-1 self-stretch grow-0 w-[116px] h-[18px] font-[Inter] text-[#898989]">
+                                  Petani
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            <ul class="space-y-2 pt-6">
+                <li class="hover:bg-lime-100">
+                  <a href="#" class="ml-4 flex items-center p-2 text-base font-normal">
+                      <img src="Aset/home_alt_fill.svg" alt="home_alt_fill" class="h-5 w-5">
+                      <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Beranda</span>
+                  </a>
+                </li>
+                <li class="hover:bg-lime-100">
+                  <a href="#" class="ml-4 flex items-center p-2 text-base font-normal">
+                      <img src="Aset/file_blank_fill.svg" alt="file_blank_fill" class="h-5 w-5">
+                      <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Data Lahan</span>
+                  </a>
+                </li>
+                <li>
+                  <div class="">
+                      <a href="#" class="ml-4 flex items-center p-2 w-full text-base font-normal transition duration-75 group">
+                          <img src="Aset/bar_chart.svg" alt="bar_chart" class="h-5 w-5">
+                          <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] pr-12">Siklus Tanam</span>
+                          <svg aria-hidden="true" focusable="false" data-prefix="fas" class="text-[#151E03] w-3 h-3 rotate-180" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+                      </a>
+                  </div>
+                  <ul id="dropdown" class="py-2 space-y-2">
+                      <li class="bg-[#DCEBBA]">
+                          <a href="#" class="flex items-center p-2 pl-11 w-full text-sm font-semibold text-[#537210] font-[Poppins] transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"><img src="Aset/Vector_enable.svg" alt="Vector" class="mr-3">Kegiatan</a>
+                      </li>
+                      <li>
+                          <a href="#" class="flex items-center p-2 pl-11 w-full text-sm font-semibold text-[#151E03] font-[Poppins] transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"><img src="Aset/Vector_enable.svg" alt="Vector" class="mr-3">Riwayat</a>
+                      </li>
+                  </ul>
+                </li>
+            </ul>
+            <ul class="pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700">
+                <li class="hover:bg-lime-100">
+                  <a href="#" class="ml-4 flex items-center p-2 text-base font-normal text-gray-900 transition duration-75">
+                      <img src="Aset/refresh.svg" alt="refresh" class="h-5 w-5">
+                      <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Ubah kata sandi</span>
+                  </a>
+                </li>
+                <li class="hover:bg-lime-100">
+                  <a href="#" class="ml-4 flex items-center p-2 text-base font-normal text-gray-900 transition duration-75">
+                      <img src="Aset/exit.svg" alt="exit" class="h-5 w-5">
+                      <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Keluar</span>
+                  </a>
+                </li>
+            </ul>
+          </div>
+      </aside> 
     </div>
   
 
@@ -257,15 +257,11 @@
           </div>
 
 
-        
-          
 
         </div>
       </section>
 
 
-
-    
-    
+  
 </body>
 </html>
