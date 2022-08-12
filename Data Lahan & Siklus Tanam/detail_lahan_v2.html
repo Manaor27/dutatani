@@ -234,8 +234,8 @@
     <!-- /End content -->
  </div>
  <!-- Side bar -->
- <aside class="w-[220px] absolute box-border shadow-[-2px_0px_40px_rgba(0,0,0,0.04)]" aria-label="Sidebar">
-    <div class="py-4 rounded h-[1344px] w-[220px]">
+ <aside class="w-[220px] absolute border-r box-border shadow-[-2px_0px_40px_rgba(0,0,0,0.04)]" aria-label="Sidebar">
+    <div class="py-4 rounded h-screen w-[220px]">
         <a href="#" class="flex items-center pl-2.5 mb-5 w-[220px] h-[52px]">
             <img src="img/Logo-tandhur.svg" alt="Logo-tandhur" />
          </a>
@@ -258,44 +258,46 @@
                 </div>
             </div>
         </div>
-       <ul class="space-y-2 pt-6 pl-4">
-          <li>
-             <a href="#" class="flex items-center p-2 text-base font-normal rounded-lg dark:text-white hover:bg-lime-100 dark:hover:bg-lime-700">
+       <ul class="space-y-2 pt-6">
+          <li class="hover:bg-lime-100">
+             <a href="#" class="ml-4 flex items-center p-2 text-base font-normal">
                 <img src="img/home_alt_fill.svg" alt="home_alt_fill" class="h-5 w-5">
                 <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Beranda</span>
              </a>
           </li>
-          <li>
-             <a href="#" class="flex items-center p-2 text-base font-normal rounded-lg bg-[#DCEBBA]">
+          <li class="bg-[#DCEBBA]">
+             <a href="#" class="ml-4 flex items-center p-2 text-base font-normal">
                 <img src="img/file_blank_fill.svg" alt="file_blank_fill" class="h-5 w-5">
                 <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#537210] flex-none">Data Lahan</span>
              </a>
           </li>
           <li>
-            <button type="button" class="flex items-center p-2 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-lime-100 dark:text-white">
-                <img src="img/bar_chart.svg" alt="bar_chart" class="h-5 w-5">
-                <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-1" sidebar-toggle-item>Siklus Tanam</span>
-                <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </button>
-            <ul id="dropdown" class="hidden py-2 space-y-2">
+            <div class="hover:bg-lime-100">
+                <a href="#" class="ml-4 flex items-center p-2 w-full text-base font-normal transition duration-75 group">
+                    <img src="img/bar_chart.svg" alt="bar_chart" class="h-5 w-5">
+                    <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] pr-12">Siklus Tanam</span>
+                    <img src="img/chevron_down.svg" alt="chevron_down">
+                </a>
+            </div>
+            <ul id="dropdown" class="py-2 space-y-2 hidden">
                 <li>
-                    <a href="#" class="flex items-center p-2 pl-11 w-full text-sm font-semibold text-[#AAAAAA] font-[Poppins] rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"><img src="img/Vector_disable.svg" alt="Vector" class="mr-3">Kegiatan</a>
+                    <a href="#" class="flex items-center p-2 pl-11 w-full text-sm font-semibold text-[#AAAAAA] font-[Poppins] transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"><img src="img/Vector_disable.svg" alt="Vector" class="mr-3">Kegiatan</a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 pl-11 w-full text-sm font-semibold text-[#151E03] font-[Poppins] rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"><img src="img/Vector_enable.svg" alt="Vector" class="mr-3">Riwayat</a>
+                    <a href="#" class="flex items-center p-2 pl-11 w-full text-sm font-semibold text-[#151E03] font-[Poppins] transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"><img src="img/Vector_enable.svg" alt="Vector" class="mr-3">Riwayat</a>
                 </li>
             </ul>
           </li>
        </ul>
-       <ul class="pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700 pl-4">
-          <li>
-             <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-lime-100 dark:text-white group">
+       <ul class="pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700">
+          <li class="hover:bg-lime-100">
+             <a href="#" class="ml-4 flex items-center p-2 text-base font-normal text-gray-900 transition duration-75">
                 <img src="img/refresh.svg" alt="refresh" class="h-5 w-5">
                 <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Ubah kata sandi</span>
              </a>
           </li>
-          <li>
-             <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-lime-100 dark:text-white group">
+          <li class="hover:bg-lime-100">
+             <a href="#" class="ml-4 flex items-center p-2 text-base font-normal text-gray-900 transition duration-75">
                 <img src="img/exit.svg" alt="exit" class="h-5 w-5">
                 <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Keluar</span>
              </a>

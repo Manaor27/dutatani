@@ -12,47 +12,17 @@
 <body>
  <div class="absolute h-screen top-0 bg-[#FFFFFF] left-[220px] w-[calc(100vw-220px)]">
      <!-- Content -->
-    <div class="absolute flex flex-col items-start p-0 gap-6 h-[172px] w-[calc(100vw-284px)] top-32 left-9">
-        <div class="flex flex-col items-start p-0 gap-6  h-[172px] w-[calc(100vw-304px)] flex-none order-none grow-0 drop-shadow-md">
-            <div class="flex flex-col items-start p-6 gap-4 h-[172px] w-[calc(100vw-304px)] bg-[#FFFFFF] rounded-xl flex-none order-none grow-0">
-                <div class="flex flex-row justify-between items-start p-0 gap-8 w-[calc(100vw-350px)] h-12 flex-none order-none self-stretch grow-0">
-                    <div class="flex flex-col items-start p-0 gap-1 h-12 w-[794px] flex-none order-none grow-0">
-                        <p class="font-[Poppins] not-italic font-semibold text-base flex items-center text-[#151E03] flex-none order-none grow-0">
-                            Lahan Pertama
-                        </p>
-                        <p class="font-[Inter] not-italic font-normal text-sm flex items-center text-[#898989] flex-none order-1 grow-0">
-                            Lugu, RT.001/RW.002, Kec. Butuh, Kab. Purworejo, Jawa Tengah
-                        </p>
-                    </div>
-                    <a href="#" class="font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#618512] flex-none order-1 grow-0">
-                        Lihat detail lahan
-                    </a>
-                </div>
-                <img src="img/Vector_list.svg" alt="Vector_list" class="flex-none order-1 self-stretch grow-0">
-                <table class="flex-none order-2 grow-0 w-full">
-                    <thead>
-                        <tr class="font-[Inter] not-italic font-normal text-xs items-center text-[#898989] text-left">
-                            <td>Kabupaten atau Kota</td>
-                            <td>Kecamatan</td>
-                            <td>Desa</td>
-                            <td>Status Kepemilikan</td>
-                            <td>Tipe Pemanfaatan Lahan</td>
-                            <td>Luas Lahan</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="font-[Inter] not-italic font-medium text-sm items-center text-[#151E03]">
-                            <td>Purworejo</td>
-                            <td>Bayan</td>
-                            <td>Bringin</td>
-                            <td>Lahan Sendiri</td>
-                            <td>Sawah</td>
-                            <td>200 ha</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+    <div class="flex flex-col items-center p-0 gap-6 absolute w-[calc(100vw-220px)] h-[220px] m-[0_auto] top-[250px]">
+        <img src="img/Icon.svg" alt="Icon" class="w-[100px] h-[100px]">
+        <span class="font-[Poppins] not-italic font-semibold text-xl flex items-center text-[#151E03] flex-none order-1 grow-0">
+            Belum ada lahan, tambahkan lahan untuk memulai
+        </span>
+        <button class="flex flex-row items-center p-[12px_16px] gap-2 w-[162px] h-11 bg-[#7DAB18] shadow-[0px_12px_32px_rgba(0,0,0,0.16)] rounded-[5px] flex-none order-2 grow-0">
+            <img src="img/Plus.svg" alt="Plus" class="w-4 h-4">
+            <span class="font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#FFFFFF] flex-none order-1 grow-0">
+                Tambah lahan
+            </span>
+        </button>
     </div>
     <!-- /End content -->
     <!-- Header -->
@@ -85,7 +55,7 @@
     <!-- /End breadcrumd -->
  </div>
  <!-- Side bar -->
- <aside class="w-[220px] absolute box-border shadow-[-2px_0px_40px_rgba(0,0,0,0.04)]" aria-label="Sidebar">
+ <aside class="w-[220px] absolute border-r box-border shadow-[-2px_0px_40px_rgba(0,0,0,0.04)]" aria-label="Sidebar">
     <div class="py-4 rounded h-screen w-[220px]">
         <a href="#" class="flex items-center pl-2.5 mb-5 w-[220px] h-[52px]">
             <img src="img/Logo-tandhur.svg" alt="Logo-tandhur" />
@@ -109,44 +79,46 @@
                 </div>
             </div>
         </div>
-       <ul class="space-y-2 pt-6 pl-4">
-          <li>
-             <a href="#" class="flex items-center p-2 text-base font-normal rounded-lg dark:text-white hover:bg-lime-100 dark:hover:bg-lime-700">
+       <ul class="space-y-2 pt-6">
+          <li class="hover:bg-lime-100">
+             <a href="#" class="ml-4 flex items-center p-2 text-base font-normal">
                 <img src="img/home_alt_fill.svg" alt="home_alt_fill" class="h-5 w-5">
                 <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Beranda</span>
              </a>
           </li>
-          <li>
-             <a href="#" class="flex items-center p-2 text-base font-normal rounded-lg bg-[#DCEBBA]">
+          <li class="bg-[#DCEBBA]">
+             <a href="#" class="ml-4 flex items-center p-2 text-base font-normal">
                 <img src="img/file_blank_fill.svg" alt="file_blank_fill" class="h-5 w-5">
                 <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#537210] flex-none">Data Lahan</span>
              </a>
           </li>
           <li>
-            <button type="button" class="flex items-center p-2 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-lime-100 dark:text-white">
-                <img src="img/bar_chart.svg" alt="bar_chart" class="h-5 w-5">
-                <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-1" sidebar-toggle-item>Siklus Tanam</span>
-                <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </button>
-            <ul id="dropdown" class="hidden py-2 space-y-2">
+            <div class="hover:bg-lime-100">
+                <a href="#" class="ml-4 flex items-center p-2 w-full text-base font-normal transition duration-75 group">
+                    <img src="img/bar_chart.svg" alt="bar_chart" class="h-5 w-5">
+                    <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] pr-12">Siklus Tanam</span>
+                    <img src="img/chevron_down.svg" alt="chevron_down">
+                </a>
+            </div>
+            <ul id="dropdown" class="py-2 space-y-2 hidden">
                 <li>
-                    <a href="#" class="flex items-center p-2 pl-11 w-full text-sm font-semibold text-[#AAAAAA] font-[Poppins] rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"><img src="img/Vector_disable.svg" alt="Vector" class="mr-3">Kegiatan</a>
+                    <a href="#" class="flex items-center p-2 pl-11 w-full text-sm font-semibold text-[#AAAAAA] font-[Poppins] transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"><img src="img/Vector_disable.svg" alt="Vector" class="mr-3">Kegiatan</a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 pl-11 w-full text-sm font-semibold text-[#151E03] font-[Poppins] rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"><img src="img/Vector_enable.svg" alt="Vector" class="mr-3">Riwayat</a>
+                    <a href="#" class="flex items-center p-2 pl-11 w-full text-sm font-semibold text-[#151E03] font-[Poppins] transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"><img src="img/Vector_enable.svg" alt="Vector" class="mr-3">Riwayat</a>
                 </li>
             </ul>
           </li>
        </ul>
-       <ul class="pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700 pl-4">
-          <li>
-             <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-lime-100 dark:text-white group">
+       <ul class="pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700">
+          <li class="hover:bg-lime-100">
+             <a href="#" class="ml-4 flex items-center p-2 text-base font-normal text-gray-900 transition duration-75">
                 <img src="img/refresh.svg" alt="refresh" class="h-5 w-5">
                 <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Ubah kata sandi</span>
              </a>
           </li>
-          <li>
-             <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-lime-100 dark:text-white group">
+          <li class="hover:bg-lime-100">
+             <a href="#" class="ml-4 flex items-center p-2 text-base font-normal text-gray-900 transition duration-75">
                 <img src="img/exit.svg" alt="exit" class="h-5 w-5">
                 <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Keluar</span>
              </a>
@@ -156,12 +128,12 @@
  </aside> 
  <!-- /End side bar -->
  <!-- Pop-up -->
- <div class="hidden absolute w-screen h-screen left-0 top-0 bg-[#000000] opacity-50"></div>
- <div class="hidden flex flex-col items-start p-8 gap-6 isolate w-[853px] relative h-[560px] top-20 m-[0_auto] bg-[#FFFFFF] shadow-[0px_0px_32px_rgba(0,0,0,0.1)] rounded-xl ">
+ <div class="absolute w-screen h-screen left-0 top-0 bg-[#000000] opacity-50"></div>
+ <div class="flex flex-col items-start p-8 gap-6 isolate w-[853px] relative h-[560px] top-20 m-[0_auto] bg-[#FFFFFF] shadow-[0px_0px_32px_rgba(0,0,0,0.1)] rounded-xl ">
      <div class="flex flex-col items-start p-0 gap-6 w-[853px] h-[426px] flex-none order-none self-stretch grow-0 z-0 scrollbar overflow-y-scroll">
         <div class="flex flex-col items-start p-0 gap-1 w-[789px] h-9 flex-none order-none self-stretch grow-0">
             <span class="font-[Poppins] not-italic font-semibold text-2xl flex items-center text-[#151E03] flex-none order-none self-stretch grow-0">
-                Tambah Lahan baru
+                Tambah Lahan Baru
             </span>
         </div>
         <div class="flex flex-col items-start p-0 gap-6 w-[789px] h-[524px] flex-none order-1 grow-0 self-stretch">
@@ -207,7 +179,7 @@
                         <label class="font-[Inter] not-italic font-medium text-sm flex items-center text-[#151E03] flex-none order-none grow-0">
                             Status Kepemilikan
                         </label>
-                        <select name="" id="" class="box-border flex flex-row items-start p-[10px_16px] ml-[1.5px] gap-2 w-96 h-12 bg-[#FFFFFF] border border-solid border-[#E1E1E1] rounded-[5px] flex-none order-1 self-stretch grow-0 focus:border-[#7DAB18] focus:ring-[#7DAB18] text-[#BDBDBD] font-[Inter] cursor-pointer">
+                        <select name="" id="" class="box-border flex flex-row items-start p-[10px_16px] ml-[1.5px] gap-2 w-96 h-12 bg-[#FFFFFF] border border-solid border-[#E1E1E1] rounded-[5px] flex-none order-1 self-stretch grow-0 focus:border-[#7DAB18] focus:ring-[#7DAB18] text-[#151E03] font-[Inter] cursor-pointer">
                             <option value="" hidden>Pilih status kepemilikan</option>
                             <option value="Lahan Milik" class="text-[#151E03]">Lahan Milik</option>
                             <option value="Sewa" class="text-[#151E03]">Sewa</option>
@@ -218,7 +190,7 @@
                         <label class="font-[Inter] not-italic font-medium text-sm flex items-center text-[#151E03] flex-none order-none grow-0">
                             Tipe Pemanfaatan Lahan
                         </label>
-                        <select name="" id="" class="box-border flex flex-row items-start p-[10px_16px] ml-[1.5px] gap-2 w-96 h-12 bg-[#FFFFFF] border border-solid border-[#E1E1E1] rounded-[5px] flex-none order-1 self-stretch grow-0 focus:border-[#7DAB18] focus:ring-[#7DAB18] text-[#BDBDBD] font-[Inter] cursor-pointer">
+                        <select name="" id="" class="box-border flex flex-row items-start p-[10px_16px] ml-[1.5px] gap-2 w-96 h-12 bg-[#FFFFFF] border border-solid border-[#E1E1E1] rounded-[5px] flex-none order-1 self-stretch grow-0 focus:border-[#7DAB18] focus:ring-[#7DAB18] text-[#151E03] font-[Inter] cursor-pointer">
                             <option value="" hidden class="">Pilih tipe pemanfaatan lahan</option>
                             <option value="Pertanian" class="text-[#151E03]">Pertanian</option>
                             <option value="Perkebunan" class="text-[#151E03]">Perkebunan</option>
@@ -238,19 +210,19 @@
                                 <option value="m²">m²</option>
                             </select>
                         </div>
-                        <div class="flex flex-col items-start p-0 gap-[6px] w-96 h-[74px] flex-none order-1 self-stretch grow-0">
-                            <label class="font-[Inter] not-italic font-medium text-sm flex items-center text-[#151E03] flex-none order-none grow-0">
-                                Detail Alamat
-                            </label>
-                            <textarea name="" id="" class="box-border flex flex-row items-start p-[14px_16px] ml-[1.5px] gap-2 w-96 h-[104px] bg-[#FFFFFF] border border-solid border-[#E1E1E1] rounded-[5px] flex-none order-1 self-stretch grow-0 focus:border-[#7DAB18] focus:ring-[#7DAB18] placeholder:text-[#BDBDBD] text-[#151E03] font-[Inter]" placeholder="Contoh: Lugu, RT.001/RW.002, Kec. Butuh, Kab. Purworejo, Jawa Tengah"></textarea>
-                        </div>
-                        <div class="w-96 h-72 rounded-xl flex-none order-2 self-stretch grow">
-                            <img src="img/image_map.svg" alt="image" class="pt-[70px]">
-                            <div class="relative w-96 h-10 left-0 bottom-56 bg-[#7DAB18] opacity-70 rounded-[12px_12px_0px_0px]"></div>
-                            <span class="relative left-[12px] bottom-[251px] font-[Inter] not-italic font-medium text-xs flex items-center text-[#FFFFFF]">
-                                Letakkan pin secara akurat
-                            </span>
-                        </div>
+                    </div>
+                    <div class="flex flex-col items-start p-0 gap-[6px] w-96 h-[74px] flex-none order-1 self-stretch grow-0">
+                        <label class="font-[Inter] not-italic font-medium text-sm flex items-center text-[#151E03] flex-none order-none grow-0">
+                            Detail Alamat
+                        </label>
+                        <textarea name="" id="" class="box-border flex flex-row items-start p-[14px_16px] ml-[1.5px] gap-2 w-96 h-[104px] bg-[#FFFFFF] border border-solid border-[#E1E1E1] rounded-[5px] flex-none order-1 self-stretch grow-0 focus:border-[#7DAB18] focus:ring-[#7DAB18] placeholder:text-[#BDBDBD] text-[#151E03] font-[Inter]" placeholder="Contoh: Lugu, RT.001/RW.002, Kec. Butuh, Kab. Purworejo, Jawa Tengah"></textarea>
+                    </div>
+                    <div class="w-96 h-72 rounded-xl flex-none order-2 self-stretch grow">
+                        <img src="img/image_map.svg" alt="image" class="pt-[70px]">
+                        <div class="relative w-96 h-10 left-0 bottom-56 bg-[#7DAB18] opacity-70 rounded-[12px_12px_0px_0px]"></div>
+                        <span class="relative left-[12px] bottom-[251px] font-[Inter] not-italic font-medium text-xs flex items-center text-[#FFFFFF]">
+                            Letakkan pin secara akurat
+                        </span>
                     </div>
                 </div>
             </div>
@@ -276,52 +248,5 @@
      </div>
  </div>
  <!-- /End Pop-up -->
- <!-- Alert Success -->
- <div class="hidden flex flex-row justify-between items-center p-4 gap-4 relative w-[401px] h-[58px] top-10 m-[0_auto] bg-[#DDFFF1] rounded-xl">
-     <div class="flex flex-col items-start p-0 gap-2 w-[333px] h-[26px] flex-none order-none grow-0">
-        <div class="flex flex-row items-center p-0 gap-4 w-[294px] h-[26px] flex-none order-none grow-0">
-            <img src="img/success.svg" alt="success" class="w-6 h-6">
-            <span class="font-[Poppins] not-italic font-semibold text-lg flex items-center text-[#23AD76] flex-none order-1 grow-0">
-                Data berhasil ditambahkan
-            </span>
-        </div>
-     </div>
-     <a href="#">
-        <img src="img/close.svg" alt="close" class="w-5 h-5">
-     </a>
- </div>
- <!-- /End Alert Success -->
- <div class="absolute w-screen h-screen left-0 top-0 bg-[#000000] opacity-50"></div>
- <div class="absolute flex items-center w-[204px] left-4 top-[258px] p-2 text-base font-normal rounded-lg bg-[#FFFFFF]">
-    <img src="img/bar_chart.svg" alt="bar_chart" class="h-5 w-5">
-    <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-1" sidebar-toggle-item>Siklus Tanam</span>
-    <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-</div>
- <div class="flex flex-row items-center p-0 absolute w-[367px] h-[188px] top-[188px] left-[244px]">
-    <img src="img/Polygon.svg" alt="Polygon" class="w-[34px] h-[31px]">
-    <div class="flex flex-col items-end p-4 gap-5 w-[347px] h-[188px] bg-[#FFFFFF] rounded-[7px] flex-none order-none grow-0 m-[0px_-11px]">
-        <div class="flex flex-row items-start p-0 gap-3 w-[315px] h-[100px] flex-none order-none self-stretch grow-0">
-            <img src="img/guide_icon.svg" alt="guide_icon" class="w-6 h-6">
-            <div class="flex flex-col items-start p-0 gap-2 w-[279px] h-[100px] flex-none order-1 grow">
-                <span class="h-[52px] font-[Poppins] not-italic font-semibold text-lg flex items-center text-[#618512] flex-none order-none self-stretch grow-0">
-                    Klik di sini untuk memulai siklus tanam anda
-                </span>
-                <span class="h-10 font-[Inter] not-italic font-normal text-sm flex items-center text-[#151E03] flex-none order-1 self-stretch grow-0">
-                    Anda juga bisa langsung memulai siklus tanam
-                </span>
-            </div>
-        </div>
-        <div class="flex flex-row items-center p-[0px_0px_0px_36px] gap-5 w-[315px] h-9 flex-none order-1 self-stretch grow-0">
-            <span class="font-[Inter] not-italic font-normal text-xs flex items-center text-[#909090] flex-none order-none grow">
-                Langkah 2 dari 2
-            </span>
-            <button class="flex items-center flex-row p-[8px_12px] gap-2 w-[88px] h-9 bg-[#7DAB18] shadow-[0px_12px_32px_rgba(0,0,0,0.16)] rounded-[5px] flex-none order-1 grow-0">
-                <span class="font-[Poppins] font-semibold text-sm text-[#FFFFFF]">
-                    Mengerti
-                </span>
-            </button>
-        </div>
-    </div>
- </div>
 </body>
 </html>

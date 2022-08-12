@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+ <div class="absolute h-screen top-0 bg-[#FFFFFF] left-[220px] w-[calc(100vw-220px)]">
+     <!-- Content -->
+    <div class="flex flex-col items-center p-0 gap-6 absolute w-[calc(100vw-220px)] h-[220px] m-[0_auto] top-[250px]">
+        <img src="img/Icon.svg" alt="Icon" class="w-[100px] h-[100px]">
+        <span class="font-[Poppins] not-italic font-semibold text-xl flex items-center text-[#151E03] flex-none order-1 grow-0">
+            Belum ada siklus, mulai siklus tanam untuk memulai
+        </span>
+        <button class="flex flex-row items-center p-[12px_16px] gap-2 w-[204px] h-11 bg-[#7DAB18] shadow-[0px_12px_32px_rgba(0,0,0,0.16)] rounded-[5px] flex-none order-2 grow-0">
+            <span class="font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#FFFFFF] flex-none order-1 grow-0">
+                Mulai siklus tanam baru
+            </span>
+        </button>
+    </div>
+    <!-- /End content -->
+    <!-- Header -->
+    <div class="flex flex-col items-start p-0 gap-8 absolute h-16 left-8 top-[63px]">
+        <div class="flex flex-col items-start p-0 gap-8 h-16 flex-none order-none grow-0">
+            <div class="flex flex-row justify-between items-start p-0 gap-[calc(100vw-878px)] h-16 flex-none order-none grow-0">
+                <div class="flex flex-col items-start p-0 gap-1 h-16 flex-none order-none grow-0">
+                    <span class="font-[Poppins] not-italic font-semibold text-2xl flex items-center text-[#151E03] flex-none order-none grow-0">
+                        Siklus Tanam
+                    </span>
+                    <span class="font-[Inter] not-italic font-medium text-base flex items-center text-[#898989] flex-none order-1 grow-0">
+                        Anda bisa melihat dan membuat rencana siklus tanam
+                    </span>
+                </div>
+                <div class="flex flex-row items-start p-0 gap-4 w-[190px] h-9 flex-none order-1 grow-0">
+                    <button class="flex flex-row items-center p-[8px_12px] gap-2 w-[190px] h-9 bg-[#7DAB18] shadow-[0px_12px_32px_rgba(0,0,0,0.16)] rounded-[5px] flex-none order-none grow-0">
+                        <span class="font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#FFFFFF] flex-none order-none grow-0">
+                            Mulai siklus tanam baru
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /End header -->
+    <!-- Breadcrumb -->
+    <div class="flex flex-row items-center p-0 gap-0.5 absolute h-[18px] left-8 top-8">
+        <span class="font-[Inter] not-italic font-normal text-xs flex items-center text-[#6F9815] flex-none order-none grow-0">
+            Dashbord
+        </span>
+        <img src="img/chevron_right.svg" alt="chevron_right" class="w-3 h-3 flex-none order-1 grow-0">
+        <span class="font-[Inter] not-italic font-normal text-xs flex items-center text-[#6F9815] flex-none order-2 grow-0">
+            Siklus Tanam
+        </span>
+    </div>
+    <!-- /End breadcrumd -->
+ </div>
+ <!-- Side bar -->
+ <aside class="w-[220px] absolute border-r box-border shadow-[-2px_0px_40px_rgba(0,0,0,0.04)]" aria-label="Sidebar">
+    <div class="py-4 rounded h-screen w-[220px]">
+        <a href="#" class="flex items-center pl-2.5 mb-5 w-[220px] h-[52px]">
+            <img src="img/Logo-tandhur.svg" alt="Logo-tandhur" />
+         </a>
+        <div class="flex flex-col items-start p-[0px_24px] gap-2 w-[220px] h-[62px] flex-none order-1 self-stretch grow-0">
+            <div class="flex flex-col items-start pt-[10px] pl-3 gap-1 w-[172px] h-[62px] bg-[#FFFFFF] border border-solid border-[rgba(185,185,185,0.2)] shadow-[0px_12px_32px_rgba(0,0,0,0.07)] rounded-lg flex-none order-none self-stretch grow-0">
+                <div class="flex flex-row items-center p-0 gap-2 flex-none order-none self-stretch grow-0 w-[148px] h-[38px]">
+                    <div class="w-6 h-6 flex-none order-none grow-0 rounded-[40px] border-[0.8px] border-solid border-[#3895C1] bg-[rgba(68,194,253,0.5)]">
+                        <p class="font-[Poppins] not-italic font-semibold text-[10px] leading-[18px] flex items-center text-center text-[#3895C1] pl-[20.83%] pt-[10.42%]">
+                            AS
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-start p-0 flex-none order-1 grow">
+                        <div class="h-5 not-italic font-semibold text-sm flex items-center flex-none order-none self-stretch grow-0 text-[#151E03] font-[Poppins]">
+                            Ahmad Subarjo
+                        </div>
+                        <div class="not-italic font-normal text-xs flex items-center flex-none order-1 self-stretch grow-0 w-[116px] h-[18px] font-[Inter] text-[#898989]">
+                            Petani
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <ul class="space-y-2 pt-6">
+          <li class="hover:bg-lime-100">
+             <a href="#" class="ml-4 flex items-center p-2 text-base font-normal">
+                <img src="img/home_alt_fill.svg" alt="home_alt_fill" class="h-5 w-5">
+                <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Beranda</span>
+             </a>
+          </li>
+          <li class="hover:bg-lime-100">
+             <a href="#" class="ml-4 flex items-center p-2 text-base font-normal">
+                <img src="img/file_blank_fill_v2.svg" alt="file_blank_fill" class="h-5 w-5">
+                <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Data Lahan</span>
+             </a>
+          </li>
+          <li>
+            <div class="bg-[#DCEBBA]">
+                <a href="#" class="ml-4 flex items-center p-2 w-full text-base font-normal transition duration-75 group">
+                    <img src="img/bar_chart_v2.svg" alt="bar_chart" class="h-5 w-5">
+                    <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#537210] pr-12">Siklus Tanam</span>
+                    <img src="img/chevron_down.svg" alt="chevron_down">
+                </a>
+            </div>
+            <ul id="dropdown" class="py-2 space-y-2">
+                <li>
+                    <a href="#" class="flex items-center p-2 pl-11 w-full text-sm font-semibold text-[#AAAAAA] font-[Poppins] transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"><img src="img/Vector_disable.svg" alt="Vector" class="mr-3">Kegiatan</a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center p-2 pl-11 w-full text-sm font-semibold text-[#151E03] font-[Poppins] transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"><img src="img/Vector_enable.svg" alt="Vector" class="mr-3">Riwayat</a>
+                </li>
+            </ul>
+          </li>
+       </ul>
+       <ul class="pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700">
+          <li class="hover:bg-lime-100">
+             <a href="#" class="ml-4 flex items-center p-2 text-base font-normal text-gray-900 transition duration-75">
+                <img src="img/refresh.svg" alt="refresh" class="h-5 w-5">
+                <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Ubah kata sandi</span>
+             </a>
+          </li>
+          <li class="hover:bg-lime-100">
+             <a href="#" class="ml-4 flex items-center p-2 text-base font-normal text-gray-900 transition duration-75">
+                <img src="img/exit.svg" alt="exit" class="h-5 w-5">
+                <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Keluar</span>
+             </a>
+          </li>
+       </ul>
+    </div>
+ </aside> 
+ <!-- /End side bar -->
+ <!-- Pop-up -->
+ <div class="absolute w-screen h-screen left-0 top-0 bg-[#000000] opacity-50"></div>
+ <div class="flex flex-col items-start p-8 gap-6 isolate w-[853px] relative h-[560px] top-20 m-[0_auto] bg-[#FFFFFF] shadow-[0px_0px_32px_rgba(0,0,0,0.1)] rounded-xl ">
+     <div class="flex flex-col items-start p-0 gap-8 w-[789px] h-[426px] flex-none order-none self-stretch grow-0">
+        <div class="flex flex-col items-start p-0 gap-1 w-[789px] h-[88px] flex-none order-none self-stretch grow-0">
+            <span class="font-[Inter] not-italic font-normal text-sm flex items-center text-[#898989] flex-none order-none self-stretch grow-0">
+                Langkah 1 dari 3
+            </span>
+            <span class="font-[Poppins] not-italic font-semibold text-2xl flex items-center text-[#151E03] flex-none order-1 self-stretch grow-0">
+                Tambah Lahan Baru
+            </span>
+            <span class="font-[Inter] not-italic font-medium text-base flex items-center text-[#898989] flex-none order-2 self-stretch grow-0">
+                Mulai Siklus Tanam Baru
+            </span>
+        </div>
+        <div class="flex flex-col items-start p-0 gap-6 w-[789px] h-[254px] flex-none order-1 grow-0 self-stretch">
+            <div class="flex flex-row items-start p-0 gap-6 w-[789px] h-[254px] flex-none order-none grow-0 self-stretch">
+                <div class="flex flex-col items-start p-0 gap-4 w-96 h-[254px] flex-none order-none self-stretch grow-0">
+                    <div class="flex flex-col items-start p-0 gap-[6px] w-96 h-[74px] flex-none order-none self-stretch grow-0">
+                        <label class="font-[Inter] not-italic font-medium text-sm flex items-center text-[#151E03] flex-none order-none grow-0">
+                            Nama Siklus
+                        </label>
+                        <input type="text" name="" id="" class="box-border flex flex-row items-start p-[14px_16px] ml-[1.5px] gap-2 w-96 h-12 bg-[#FFFFFF] border border-solid border-[#E1E1E1] rounded-[5px] flex-none order-1 self-stretch grow-0 focus:border-[#7DAB18] focus:ring-[#7DAB18] placeholder:text-[#BDBDBD] font-[Inter]" placeholder="Isi nama siklus">
+                    </div>
+                    <div class="flex flex-col items-start p-0 gap-[6px] w-96 h-[74px] flex-none order-1 self-stretch grow-0">
+                        <label class="font-[Inter] not-italic font-medium text-sm flex items-center text-[#151E03] flex-none order-none grow-0">
+                            Tipe Penutupan Lahan
+                        </label>
+                        <select name="" id="" class="box-border flex flex-row items-start p-[10px_16px] ml-[1.5px] gap-2 w-96 h-12 bg-[#FFFFFF] border border-solid border-[#E1E1E1] rounded-[5px] flex-none order-1 self-stretch grow-0 focus:border-[#7DAB18] focus:ring-[#7DAB18] text-[#151E03] font-[Inter] cursor-pointer">
+                            <option value="" hidden class="text-[#BDBDBD]">Pilih tipe penutupan lahan</option>
+                            <option value="Sawah" class="text-[#151E03]">Sawah</option>
+                            <option value="Ladang" class="text-[#151E03]">Ladang</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col items-start p-0 gap-[6px] w-96 h-[74px] flex-none order-2 self-stretch grow-0">
+                        <label class="font-[Inter] not-italic font-medium text-sm flex items-center text-[#151E03] flex-none order-none grow-0">
+                            Pilih Lahan
+                        </label>
+                        <select name="" id="" class="box-border flex flex-row items-start p-[10px_16px] ml-[1.5px] gap-2 w-96 h-12 bg-[#FFFFFF] border border-solid border-[#E1E1E1] rounded-[5px] flex-none order-1 self-stretch grow-0 focus:border-[#7DAB18] focus:ring-[#7DAB18] text-[#151E03] font-[Inter] cursor-pointer">
+                            <option value="" hidden>Pilih lahan</option>
+                            <option value="Lahan Pertama" class="text-[#151E03]">Lahan Pertama</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex flex-col items-start p-0 gap-4 w-96 h-[254px] flex-none order-1 self-stretch grow-0">
+                    <div class="flex flex-col items-start p-0 gap-[6px] w-96 h-[74px] flex-none order-none self-stretch grow-0">
+                        <label class="font-[Inter] not-italic font-medium text-sm flex items-center text-[#151E03] flex-none order-none grow-0">
+                            Komoditas
+                        </label>
+                        <input type="text" name="" id="" class="box-border flex flex-row items-start p-[14px_16px] ml-[1.5px] gap-2 w-96 h-12 bg-[#FFFFFF] border border-solid border-[#E1E1E1] rounded-[5px] flex-none order-1 self-stretch grow-0 focus:border-[#7DAB18] focus:ring-[#7DAB18] placeholder:text-[#BDBDBD] font-[Inter]" placeholder="Pilih atau ketik komoditas">
+                        <span class="flex flex-row items-center flex-none order-2 self-stretch grow-0 relative left-[360px] bottom-8">
+                            <img src="img/chevron_up.svg" alt="chevron_up" class="hidden">
+                            <img src="img/chevron_down.svg" alt="chevron_down">
+                        </span>
+                    </div>
+                    <div class="flex flex-col items-start p-0 gap-[6px] w-96 h-[74px] flex-none order-1 self-stretch grow-0">
+                        <label class="font-[Inter] not-italic font-medium text-sm flex items-center text-[#151E03] flex-none order-none grow-0">
+                            Daur Produksi
+                        </label>
+                        <select name="" id="" class="box-border flex flex-row items-start p-[10px_16px] ml-[1.5px] gap-2 w-96 h-12 bg-[#FFFFFF] border border-solid border-[#E1E1E1] rounded-[5px] flex-none order-1 self-stretch grow-0 focus:border-[#7DAB18] focus:ring-[#7DAB18] text-[#151E03] font-[Inter] cursor-pointer">
+                            <option value="" hidden class="text-[#BDBDBD]">Pilih daur produksi</option>
+                            <option value="3 Bulan" class="text-[#151E03]">3 Bulan</option>
+                            <option value="4 Bulan" class="text-[#151E03]">4 Bulan</option>
+                            <option value="5 Bulan" class="text-[#151E03]">5 Bulan</option>
+                            <option value="6 Bulan" class="text-[#151E03]">6 Bulan</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col items-start p-0 gap-[6px] w-96 h-[74px] flex-none order-2 self-stretch grow-0">
+                        <label class="font-[Inter] not-italic font-medium text-sm flex items-center text-[#151E03] flex-none order-none grow-0">
+                            Sistem Pengairan
+                        </label>
+                        <select name="" id="" class="box-border flex flex-row items-start p-[10px_16px] ml-[1.5px] gap-2 w-96 h-12 bg-[#FFFFFF] border border-solid border-[#E1E1E1] rounded-[5px] flex-none order-1 self-stretch grow-0 focus:border-[#7DAB18] focus:ring-[#7DAB18] text-[#151E03] font-[Inter] cursor-pointer">
+                            <option value="" hidden>Pilih sistem pengairan</option>
+                            <option value="Irigasi" class="text-[#151E03]">Irigasi</option>
+                            <option value="Non Irigasi" class="text-[#151E03]">Non Irigasi</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="flex flex-row items-start p-[16px_40px_24px] gap-6 absolute w-[853px] h-[84px] left-0 bottom-0 bg-[#FFFFFF] shadow-[0px_0px_32px_rgba(0,0,0,0.13)] rounded-[0px_0px_12px_12px] flex-none order-1 grow-0 z-[1]">
+        <button class="flex flex-row justify-center items-center p-[12px_16px] gap-2 w-[374.5px] h-11 rounded-[5px] flex-none order-none grow hover:bg-[#DCEBBA] hover:text-[#7DAB18] focus:bg-[#C5DE8D] focus:text-[#537210]">
+            <span class="font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#618512] flex-none order-none grow-0">
+                Tutup halaman
+            </span>
+        </button>
+        <button class="flex flex-row justify-center items-center p-[12px_16px] gap-2 w-[374.5px] bg-[#BFBFBF] h-11 rounded-[5px] flex-none order-1 grow" disabled>
+            <span class="font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#FFFFFF] flex-none order-none grow-0">
+                Lanjutkan
+            </span>
+        </button>
+        <!-- Jika Form Terisi Semua -->
+        <!--button class="flex flex-row justify-center items-center p-[12px_16px] gap-2 w-[374.5px] bg-[##7DAB18] h-11 rounded-[5px] flex-none order-1 grow hover:bg-[#DCEBBA] hover:text-[#7DAB18] focus:bg-[#C5DE8D] focus:text-[#537210]">
+            <span class="font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#FFFFFF] flex-none order-none grow-0">
+                Lanjutkan
+            </span>
+        </button-->
+     </div>
+ </div>
+ <!-- /End Pop-up -->
+</body>
+</html>
