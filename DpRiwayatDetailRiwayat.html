@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dp Empty Dashboard</title>
+    <title>Dp Riwayat Detail Riwayat</title>
     <link rel="icon" href="Aset/logo.png" type="image/png" />
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
@@ -57,10 +57,10 @@
                   </div>
               </div>
             <ul class="space-y-2 pt-6">
-                <li class="hover:bg-lime-100 bg-[#DCEBBA]">
+                <li class="hover:bg-lime-100">
                   <a href="#" class="ml-4 flex items-center p-2 text-base font-normal">
-                      <img src="Aset/home_alt_fill_green.svg" alt="home_alt_fill" class="h-5 w-5">
-                      <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#537210] flex-none">Beranda</span>
+                      <img src="Aset/home_alt_fill.svg" alt="home_alt_fill" class="h-5 w-5">
+                      <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Beranda</span>
                   </a>
                 </li>
                 <li class="hover:bg-lime-100">
@@ -74,15 +74,15 @@
                       <a href="#" class="ml-4 flex items-center p-2 w-full text-base font-normal transition duration-75 group">
                           <img src="Aset/bar_chart.svg" alt="bar_chart" class="h-5 w-5">
                           <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] pr-12">Siklus Tanam</span>
-                          <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 rotate-180" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+                          <svg aria-hidden="true" focusable="false" data-prefix="fas" class="text-[#151E03] w-3 h-3 rotate-180" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
                       </a>
                   </div>
                   <ul id="dropdown" class="py-2 space-y-2">
                       <li>
-                          <a href="#" class="flex items-center p-2 pl-11 w-full text-sm font-semibold text-[#AAAAAA] font-[Poppins] transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"><img src="Aset/Vector_disable.svg" alt="Vector" class="mr-3">Kegiatan</a>
+                          <a href="#" class="flex items-center p-2 pl-11 w-full text-sm font-semibold text-[#151E03] font-[Poppins] transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"><img src="Aset/Vector_enable.svg" alt="Vector" class="mr-3">Kegiatan</a>
                       </li>
-                      <li>
-                          <a href="#" class="flex items-center p-2 pl-11 w-full text-sm font-semibold text-[#151E03] font-[Poppins] transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"><img src="Aset/Vector_enable.svg" alt="Vector" class="mr-3">Riwayat</a>
+                      <li class="bg-[#DCEBBA]">
+                          <a href="#" class="flex items-center p-2 pl-11 w-full text-sm font-semibold  text-[#537210] font-[Poppins] transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"><img src="Aset/Vector_enable.svg" alt="Vector" class="mr-3">Riwayat</a>
                       </li>
                   </ul>
                 </li>
@@ -106,41 +106,86 @@
     </div>
   
 
-      <section class="relative h-[100vh] left-[220px] w-[calc(100%-220px)]">
+    <section class="relative h-[100vh] left-[220px] w-[calc(100%-220px)]">
         <div class="home-content">
           <nav class="rounded-md w-full pl-[32px] pt-[32px]">
             <ol class="list-reset flex">
               <li><a href="#" class="font-['Inter'] not-italic font-[400] text-[12px] leading-[18px] text-[#6F9815]">Dashboard</a></li>
               <li><span class="font-['Inter'] not-italic font-[400] text-[12px] leading-[18px] text-[#6F9815] ml-2 mr-2">
                 <img src="Aset/chevron_right_green.svg" class="w-[12px] h-[12px] mt-[-16px] ml-1 mr-1"></span></li>
-              <li><a href="#" class="font-['Inter'] not-italic font-[400] text-[12px] leading-[18px] text-[#6F9815]">Beranda</a></li>
+              <li><a href="#" class="font-['Inter'] not-italic font-[400] text-[12px] leading-[18px] text-[#6F9815]">Siklus Tanam</a></li>
+              <li><span class="font-['Inter'] not-italic font-[400] text-[12px] leading-[18px] text-[#6F9815] ml-2 mr-2">
+                <img src="Aset/chevron_right_green.svg" class="w-[12px] h-[12px] mt-[-16px] ml-1 mr-1"></span></li>
+              <li><a href="#" class="font-['Inter'] not-italic font-[400] text-[12px] leading-[18px] text-[#6F9815]">Riwayat</a></li>
+              <li><span class="font-['Inter'] not-italic font-[400] text-[12px] leading-[18px] text-[#6F9815] ml-2 mr-2">
+                <img src="Aset/chevron_right_green.svg" class="w-[12px] h-[12px] mt-[-16px] ml-1 mr-1"></span></li>
+              <li><a href="#" class="font-['Inter'] not-italic font-[400] text-[12px] leading-[18px] text-[#6F9815]">Siklus Padi Jago</a></li>
             </ol>
           </nav>
 
-          <p class="font-['Poppins'] not-italic font-[600] text-[24px] leading-9 text-[#151E03] pl-8 mt-[13px]">Beranda</p>
-          
-          <p class="font-['Poppins'] not-italic font-[600] text-[16px] leading-9 text-[#151E03] pr-8 mt-[-33px] text-right">Sabtu, 16 Juli 2022</p>
+          <a href="#" class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#618512] flex ml-[42px] mt-[1px]">
+            <img src="Aset/Arrow narrow left.svg" class="w-5 h-5">
+            <p>&nbsp;&nbsp;&nbsp;Kembali</p>
+          </a>
 
-          <div class="bg-white shadow-[0px_8px_48px_rgba(0,0,0,0.08)] rounded-xl ml-8 mt-6 h-[84px] w-[calc(100%-63px)]">
-            <div class="w-[52px] h-[52px] bg-[#E7F2D1] rounded-lg ml-4 mt-4 absolute">
-              <img src="Aset/flag.svg" class="w-7 h-7 m-3">
+          <p class="font-['Poppins'] not-italic font-[600] text-[24px] leading-9 text-[#151E03] pl-8 mt-[13px]">Siklus Padi Jago</p>
+
+
+          <div class="flex">
+            <div class="w-[486px] h-[312px] bg-white shadow-[0px_8px_48px_rgba(0,0,0,0.08)] rounded-xl ml-8 mt-8 p-6">
+              <p class="font-['Poppins'] not-italic font-[600] text-[20px] leading-7 text-[#151E03]">Rencana Tanam</p>
+              <p class="font-['Inter'] not-italic font-[400] text-[12px] leading-[18px] text-[#898989] mt-4">Tipe penutupan lahan</p>
+              <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03] mt-[6px]">Sawah</p>
+              <p class="font-['Inter'] not-italic font-[400] text-[12px] leading-[18px] text-[#898989] mt-4">Komoditas</p>
+              <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03] mt-[6px]">Padi</p>
+              <p class="font-['Inter'] not-italic font-[400] text-[12px] leading-[18px] text-[#898989] mt-4">Daur produksi</p>
+              <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03] mt-[6px]">3 Bulan</p>
+              <p class="font-['Inter'] not-italic font-[400] text-[12px] leading-[18px] text-[#898989] mt-4">Sistem pengairan</p>
+              <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03] mt-[6px]">Irigasi</p>
             </div>
-            <p class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#151E03] pl-[88px] pt-4">Jangan lupa untuk membuat log setiap hari</p>
-            <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#898989] pl-[88px] pt-2">Membuat log setiap hari akan menjaga keakuratan estimasi</p>
-            <a href="#" class="justify-center w-[212px] h-[44px] bg-[#BFBFBF] rounded-[5px] font-['Poppins'] not-italic font-[600] text-[14px] leading-5 text-white flex items-center mt-[-48px] ml-[calc(100%-230px)]">Tambah kegiatan hari ini</a>
-          </div>
 
-          <p class="font-['Poppins'] not-italic font-[600] text-[20px] leading-7 text-[#151E03] pl-8 mt-8">Ringkasan</p>
+
+            <div class="w-[486px] h-[312px] bg-white shadow-[0px_8px_48px_rgba(0,0,0,0.08)] rounded-xl ml-6 mt-8 p-6">
+              <div class="flex ">
+                <p class="font-['Poppins'] not-italic font-[600] text-[20px] leading-7 text-[#151E03]">Laporan Finansial</p>
+                <div class="flex ml-[203px]">
+                  <img src="Aset/Pencil.svg" class="w-4 h-4 mt-[1px] mr-1">
+                  <a href="#" class="font-['Poppins'] not-italic font-[600] text-[14px] leading-5 text-[#618512]">Ubah</a>
+                </div>
+              </div>
+
+              <div class="flex mt-4">
+                <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">Harga Bibit</p>
+                <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03] ml-[293px]">Rp120.000</p>
+              </div>
+              <div class="flex mt-4">
+                <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">Harga Pupuk</p>
+                <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03] ml-[282px]">Rp150.000</p>
+              </div>
+              <div class="flex mt-4">
+                <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">Harga Herbisida</p>
+                <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03] ml-[258px]">Rp250.000</p>
+              </div>
+              <div class="flex mt-4">
+                <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">Harga Insectisida</p>
+                <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03] ml-[250px]">Rp500.000</p>
+              </div>
+              <div class="flex mt-4">
+                <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">Biaya Operasional</p>
+                <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03] ml-[246px]">Rp550.000</p>
+              </div>
+
+              <img class="mt-4" src="Aset/dashed_line.svg">
+
+              <div class="flex mt-4">
+                <p class="font-['Inter'] not-italic font-[500] text-[16px] leading-6 text-[#151E03]">Total</p>
+                <p class="font-['Inter'] not-italic font-[500] text-[16px] leading-6 text-[#151E03] ml-[303px]">Rp1.570.000</p>
+              </div>
+            </div>
+          </div>
           
-          <div class="flex justify-start">
-            <a href="#" class="justify-center w-[142px] h-[37px] bg-[#DCEBBA] border-x border-y border-[#7DAB18] rounded-[32px] font-['Poppins'] not-italic font-[600] text-[14px] leading-[21px] text-[#7DAB18] flex items-center ml-8 mt-4">Lahan Pertama</a>
-            <a href="#" class="justify-center w-[142px] h-[37px] bg-white border-x border-y border-[#898989] rounded-[32px] font-['Poppins'] not-italic font-[600] text-[14px] leading-[21px] text-[#898989] flex items-center ml-2 mt-4">Lahan Kedua</a>
-            <a href="#" class="justify-center w-[142px] h-[37px] bg-white border-x border-y border-[#898989] rounded-[32px] font-['Poppins'] not-italic font-[600] text-[14px] leading-[21px] text-[#898989] flex items-center ml-2 mt-4">Lahan Ketiga</a>
-            <a href="#" class="justify-center w-[142px] h-[37px] bg-white border-x border-y border-[#898989] rounded-[32px] font-['Poppins'] not-italic font-[600] text-[14px] leading-[21px] text-[#898989] flex items-center ml-2 mt-4">Lahan Keempat</a>
-            <a href="#" class="justify-center w-[142px] h-[37px] bg-white border-x border-y border-[#898989] rounded-[32px] font-['Poppins'] not-italic font-[600] text-[14px] leading-[21px] text-[#898989] flex items-center ml-2 mt-4">Lahan Kelima</a>
-          </div>
 
-          <div class="overflow-hidden w-[657px] h-[470px] bg-white shadow-[0px_8px_48px_rgba(0,0,0,0.08)] rounded-xl ml-8 mt-6">
+          <div class="overflow-hidden w-[657px] h-[470px] bg-white shadow-[0px_8px_48px_rgba(0,0,0,0.08)] rounded-xl ml-8 mt-8">
             <div class="font-['Poppins'] not-italic font-[600] text-[18px] leading-[26px] text-[#151E03] pl-[24px] pt-[24px]">Tren Hasil Panen</div>
 
             <div class="flex flex-col items-start p-0 w-96 flex-none order-none self-stretch grow-0 gap-[6px] h-[95px] ml-[204px] mt-[-37px]">
@@ -173,39 +218,39 @@
             </div>
             <div class="ml-[72px] mt-[22px]">
               <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#898989]">Komoditas</p>
-              <p class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#151E03] mt-2">-</p>
+              <p class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#151E03] mt-2">Padi</p>
             </div>
 
             <div class="w-14 h-14 bg-white shadow-[0px_8px_48px_rgba(0,0,0,0.08);] rounded-lg absolute mt-[38px]">
               <img src="Aset/Clock.svg" class="w-8 h-8 m-3">
             </div>
             <div class="ml-[72px] mt-[40px]">
-              <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#898989]">Estimasi waktu panen</p>
-              <p class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#151E03] mt-2">-</p>
+              <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#898989]">Waktu panen</p>
+              <p class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#151E03] mt-2">8 Agustus 2022</p>
             </div>
 
             <div class="w-14 h-14 bg-white shadow-[0px_8px_48px_rgba(0,0,0,0.08);] rounded-lg absolute mt-[38px]">
               <img src="Aset/Scale.svg" class="w-8 h-8 m-3">
             </div>
             <div class="ml-[72px] mt-[40px]">
-              <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#898989]">Estimasi hasil panen</p>
-              <p class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#151E03] mt-2">-</p>
+              <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#898989]">Hasil panen</p>
+              <p class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#151E03] mt-2">100 Kilogram</p>
             </div>
 
             <div class="w-14 h-14 bg-white shadow-[0px_8px_48px_rgba(0,0,0,0.08);] rounded-lg absolute mt-[38px]">
-              <img src="Aset/Minus circle.svg" class="w-8 h-8 m-3">
+              <img src="Aset/Check circle.svg" class="w-8 h-8 m-3">
             </div>
             <div class="ml-[72px] mt-[40px]">
-              <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#898989]">Kondisi tanaman</p>
-              <p class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#151E03] mt-2">-</p>
+              <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#898989]">Kondisi tanaman terakhir</p>
+              <p class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#151E03] mt-2">Tanaman Sehat</p>
             </div>
 
             <div class="w-14 h-14 bg-white shadow-[0px_8px_48px_rgba(0,0,0,0.08);] rounded-lg absolute mt-[38px]">
-              <img src="Aset/Exclamation circle blank.svg" class="w-8 h-8 m-3">
+              <img src="Aset/Exclamation circle.svg" class="w-8 h-8 m-3">
             </div>
             <div class="ml-[72px] mt-[40px]">
-              <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#898989]">Estimasi serangan</p>
-              <p class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#151E03] mt-2">-</p>
+              <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#898989]">Serangan terakhir</p>
+              <p class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#151E03] mt-2">Tikus <strong class="font-['Inter'] not-italic font-[400] text-[14px] leading-[16.94px] text-[#151E03] ">(1 Agu - 31 Sep 2022)</strong></p>
             </div>
           </div>
 
@@ -239,13 +284,15 @@
                           Pengolahan lahan
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">
-                          -
+                          01 Juli 2022
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">
-                          -
+                          01 Juli 2022
                         </td>
                         <td class="pl-6">
-                          -
+                          <a href="#" 
+                           class="justify-center w-[77px] h-[26px] bg-[#2CDA94] rounded-[40px] font-['Poppins'] not-italic font-[600] text-[12px] leading-[18px] text-white flex items-center">
+                           Sesuai <img src="Aset/Check circle.png" class="w-4 h-4 ml-[5.6px]"></a>
                         </td>
                       </tr>
 
@@ -254,13 +301,15 @@
                           Pembibitan
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">
-                          -
+                          01 Juli 2022
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">
-                          -
+                          01 Juli 2022
                         </td>
                         <td class="pl-6">
-                          -
+                          <a href="#" 
+                           class="justify-center w-[77px] h-[26px] bg-[#2CDA94] rounded-[40px] font-['Poppins'] not-italic font-[600] text-[12px] leading-[18px] text-white flex items-center">
+                           Sesuai <img src="Aset/Check circle.png" class="w-4 h-4 ml-[5.6px]"></a>
                         </td>
                       </tr>
                           
@@ -269,13 +318,15 @@
                           Penanaman
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">
-                          -
+                          01 Juli 2022
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">
-                          -
+                          01 Juli 2022
                         </td>
                         <td class="pl-6">
-                          -
+                          <a href="#" 
+                           class="justify-center w-[77px] h-[26px] bg-[#2CDA94] rounded-[40px] font-['Poppins'] not-italic font-[600] text-[12px] leading-[18px] text-white flex items-center">
+                           Sesuai <img src="Aset/Check circle.png" class="w-4 h-4 ml-[5.6px]"></a>
                         </td>
                       </tr>
 
@@ -284,13 +335,15 @@
                           Pemupukan
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">
-                          -
+                          01 Juli 2022
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">
-                          -
+                          01 Juli 2022
                         </td>
                         <td class="pl-6">
-                          -
+                          <a href="#" 
+                           class="justify-center w-[77px] h-[26px] bg-[#2CDA94] rounded-[40px] font-['Poppins'] not-italic font-[600] text-[12px] leading-[18px] text-white flex items-center">
+                           Sesuai <img src="Aset/Check circle.png" class="w-4 h-4 ml-[5.6px]"></a>
                         </td>
                       </tr>
 
@@ -299,13 +352,15 @@
                           Penyemprotan
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">
-                          -
+                          01 Juli 2022
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">
-                          -
+                          01 Juli 2022
                         </td>
                         <td class="pl-6">
-                          -
+                          <a href="#" 
+                           class="justify-center w-[77px] h-[26px] bg-[#2CDA94] rounded-[40px] font-['Poppins'] not-italic font-[600] text-[12px] leading-[18px] text-white flex items-center">
+                           Sesuai <img src="Aset/Check circle.png" class="w-4 h-4 ml-[5.6px]"></a>
                         </td>
                       </tr>
       
@@ -314,13 +369,14 @@
                           Pemanenan
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">
-                          -
+                          01 Juli 2022
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]">
-                          -
+                          01 Juli 2022
                         </td>
                         <td class="pl-6">
-                          -
+                          <a href="#" class="justify-center w-[114px] h-[26px] bg-[#B51818] rounded-[40px] font-['Poppins'] not-italic font-[600] text-[12px] leading-[18px] text-white flex items-center">
+                            Tidak Sesuai <img src="Aset/X circle.png" class="w-4 h-4 ml-[5.6px]"></a>
                         </td>
                       </tr>
                     </tbody>
@@ -413,7 +469,7 @@
              label: "Hasil Panen (Kg)",
              backgroundColor: "hsl(252, 82.9%, 67.8%)",
              borderColor: "#314F96",
-            //  data: [0, 7, 5, 18, 15, 25, 27], 
+             data: [0, 7, 5, 18, 15, 25, 27], 
            },
          ],
        };
@@ -471,13 +527,13 @@
              label: "Siklus Padi 1 (Hari)",
              backgroundColor: "#E98A6D",
              borderRadius: 6,
-            //  data: [10, 8, 10, 10, 25],
+             data: [10, 8, 10, 10, 25],
            },
            {
              label: "Siklus Padi 2 (Hari)",
              backgroundColor: "#314F96",
              borderRadius: 6,
-            //  data: [15, 20, 15, 15, 15],
+             data: [15, 20, 15, 15, 15],
            },
          ],
        };
