@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+    <!-- Pop up -->
+    <div class="absolute w-screen h-screen left-0 top-0 bg-[#000000] opacity-50"></div>
+    <div class="flex flex-col items-start p-8 gap-6 isolate relative w-[448px] h-auto m-[0_auto] top-[81px] bg-[#FFFFFF] shadow-[0px_0px_32px_rgba(0,0,0,0.1)] rounded-xl">
+        <div class="flex flex-col items-start p-0 gap-8 w-96 h-auto flex-none order-none self-stretch grow-0 z-0">
+            <div class="flex flex-col items-start p- gap-1 w-96 h-9 flex-none order-none self-stretch grow-0">
+                <span class="font-[Poppins] not-italic font-semibold text-2xl flex items-center text-[#151E03] flex-none order-none self-stretch grow-0">
+                    Ubah daerah
+                </span>
+            </div>
+            <div class="flex flex-col items-start p-0 gap-4 w-96 h-auto flex-none order-1 self-stretch grow-0 rounded-md">
+                <div class="flex flex-col items-start p-0 w-96 h-[72px] flex-none order-none grow-0">
+                    <span class="font-[Poppins] font-semibold text-base not-italic flex items-center text-[#151E03] flex-none order-none grow-0">
+                        Berdasarkan
+                    </span>
+                    <div class="flex flex-row items-start p-0 gap-3 w-96 h-12 flex-none order-1 grow-0">
+                        <div class="flex flex-row items-center p-[14px-0px] gap-2 w-[78px] h-12 rounded-[5px] flex-none order-none grow-0">
+                            <div class="flex flex-row items-center p-0 gap-2 w-[78px] h-5 flex-none order-none grow-0">
+                                <input type="radio" name="" id="" class="flex-none order-none grow-0 bg-[#FFFFFF] border-[#B9B9B9] focus:ring-[#7DAB18] focus:border-[#7DAB18] text-[#7DAB18]">
+                                <span class="font-[Inter] not-italic font-medium text-sm flex items-center text-[#151E03] flex-none order-1 grow-0">
+                                    Provinsi
+                                </span>
+                            </div>
+                            <div class="flex flex-row items-center p-0 gap-2 w-[133px] h-5 flex-none order-1 grow-0">
+                                <input type="radio" name="" id="" class="flex-none order-none grow-0 bg-[#FFFFFF] border-[#B9B9B9] focus:ring-[#7DAB18] focus:border-[#7DAB18] text-[#7DAB18]">
+                                <span class="font-[Inter] not-italic font-medium text-sm flex items-center text-[#151E03] flex-none order-1 grow-0">
+                                    Kabupaten/Kota
+                                </span>
+                            </div>
+                            <div class="flex flex-row items-center p-0 gap-2 w-[99px] h-5 flex-none order-2 grow-0">
+                                <input type="radio" name="" id="" class="flex-none order-none grow-0 bg-[#FFFFFF] border-[#B9B9B9] focus:ring-[#7DAB18] focus:border-[#7DAB18] text-[#7DAB18]">
+                                <span class="font-[Inter] not-italic font-medium text-sm flex items-center text-[#151E03] flex-none order-1 grow-0">
+                                    Kecamatan
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/Vector 3.svg" alt="Vector" class="flex-none order-1 grow-0">
+                <div class="flex flex-col items-start p-0 gap-[6px] w-96 h-[74px] flex-none order-2 self-stretch grow-0">
+                    <label class="font-[Inter] not-italic font-medium text-sm flex items-center text-[#151E03] flex-none order-none grow-0">
+                        Provinsi
+                    </label>
+                    <input type="text" name="" id="" class="box-border flex flex-row items-start p-[14px_16px] ml-[1.5px] gap-2 w-96 h-12 bg-[#FFFFFF] border border-solid border-[#E1E1E1] rounded-[5px] flex-none order-1 self-stretch grow-0 focus:border-[#7DAB18] focus:ring-[#7DAB18] placeholder:text-[#BDBDBD] font-[Inter]" placeholder="Pilih atau ketik nama provinsi">
+                    <span class="flex flex-row items-center flex-none order-2 self-stretch grow-0 relative left-[360px] bottom-8">
+                        <img src="img/chevron_up.svg" alt="chevron_up" class="hidden">
+                        <img src="img/chevron_down.svg" alt="chevron_down">
+                    </span>
+                </div>
+                <div class="hidden flex flex-col items-start p-0 gap-[6px] w-96 h-[74px] flex-none order-3 self-stretch grow-0">
+                    <label class="font-[Inter] not-italic font-medium text-sm flex items-center text-[#151E03] flex-none order-none grow-0">
+                        Kabupaten atau Kota
+                    </label>
+                    <input type="text" name="" id="" class="box-border flex flex-row items-start p-[14px_16px] ml-[1.5px] gap-2 w-96 h-12 bg-[#FFFFFF] border border-solid border-[#E1E1E1] rounded-[5px] flex-none order-1 self-stretch grow-0 focus:border-[#7DAB18] focus:ring-[#7DAB18] placeholder:text-[#BDBDBD] font-[Inter]" placeholder="Pilih atau ketik nama kabupaten">
+                    <span class="flex flex-row items-center flex-none order-2 self-stretch grow-0 relative left-[360px] bottom-8">
+                        <img src="img/chevron_up.svg" alt="chevron_up" class="hidden">
+                        <img src="img/chevron_down.svg" alt="chevron_down">
+                    </span>
+                </div>
+                <div class="hidden flex flex-col items-start p-0 gap-[6px] w-96 h-[74px] flex-none order-4 self-stretch grow-0">
+                    <label class="font-[Inter] not-italic font-medium text-sm flex items-center text-[#151E03] flex-none order-none grow-0">
+                        Kecamatan
+                    </label>
+                    <input type="text" name="" id="" class="box-border flex flex-row items-start p-[14px_16px] ml-[1.5px] gap-2 w-96 h-12 bg-[#FFFFFF] border border-solid border-[#E1E1E1] rounded-[5px] flex-none order-1 self-stretch grow-0 focus:border-[#7DAB18] focus:ring-[#7DAB18] placeholder:text-[#BDBDBD] font-[Inter]" placeholder="Pilih atau ketik nama kecamatan">
+                    <span class="flex flex-row items-center flex-none order-2 self-stretch grow-0 relative left-[360px] bottom-8">
+                        <img src="img/chevron_up.svg" alt="chevron_up" class="hidden">
+                        <img src="img/chevron_down.svg" alt="chevron_down">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-row items-start p-0 gap-6 w-96 h-11 rounded-[0px_0px_12px_12px] flex-none order-1 self-stretch grow-0 z-[1]">
+            <button class="flex flex-row justify-center items-center p-[12px_16px] gap-2 bg-[#D0E5A3] w-[148px] h-11 rounded-[5px] flex-none order-none grow hover:bg-[#DCEBBA] hover:text-[#7DAB18] focus:bg-[#C5DE8D] focus:text-[#537210]">
+                <span class="font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#618512] flex-none order-none grow-0">
+                    Batalkan
+                </span>
+            </button>
+            <button class="flex flex-row justify-center items-center p-[12px_16px] gap-2 w-[148px] bg-[#BFBFBF] h-11 rounded-[5px] flex-none order-1 grow" disabled>
+                <span class="font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#FFFFFF] flex-none order-none grow-0">
+                    Ubah
+                </span>
+            </button>
+            <!-- Button terisi semua -->
+            <!--button class="flex flex-row justify-center items-center p-[12px_16px] gap-2 w-[148px] bg-[#7DAB18] h-11 rounded-[5px] flex-none order-1 grow hover:bg-[#6F9815] focus:bg-[#537210]">
+                <span class="font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#FFFFFF] flex-none order-none grow-0">
+                    Ubah
+                </span>
+            </button-->
+        </div>
+    </div>
+    <!-- /End Pop up -->
+</body>
+</html>
