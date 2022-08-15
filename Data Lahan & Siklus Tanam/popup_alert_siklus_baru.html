@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+    <!-- Pop up -->
+    <div class="absolute w-screen h-screen left-0 top-0 bg-[#000000] opacity-50"></div>
+    <div class="flex flex-col items-start p-8 gap-6 relative w-[853px] h-[288px] m-[0_auto] top-[216px] bg-[#FFFFFF] shadow-[0px_0px_32px_rgba(0,0,0,0.1)] rounded-xl">
+        <div class="flex flex-col items-start p-0 gap-4 w-[789px] h-[156px] flex-none order-none grow-0">
+            <img src="img/alert.svg" alt="alert">
+            <div class="flex flex-col items-start p-0 gap-1 w-[789px] h-[60px] flex-none order-1 grow-0">
+                <h1 class="font-[Poppins] not-italic font-semibold text-2xl flex items-center flex-none order-none self-stretch grow-0">
+                    Apakah anda yakin ingin memulai siklus tanam baru?
+                </h1>
+                <span class="font-[Inter] not-italic font-normal text-sm flex items-center text-[#898989] flex-none order-1 self-stretch grow-0">
+                    Jika setuju, siklus tanam yang sedang berjalan akan dipindahkan ke halaman riwayat dan tidak bisa diubah lagi.
+                </span>
+            </div>
+        </div>
+        <div class="flex flex-row items-start p-0 gap-6 w-[789px] h-11 rounded-[0px_0px_12px_12px] flex-none order-1 self-stretch grow-0">
+            <button class="flex flex-row justify-center items-center p-[12px_16px] gap-2 w-[382.5px] h-11 rounded-[5px] flex-none order-none grow bg-[#D0E5A3] hover:bg-[#B9D876] focus:bg-[#A2CB48]">
+                <span class="font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#618512] flex-none order-none grow-0">
+                    Tidak
+                </span>
+            </button>
+            <button class="flex flex-row justify-center items-center p-[12px_16px] gap-2 w-[382.5px] bg-[#7DAB18] h-11 rounded-[5px] flex-none order-1 grow hover:bg-[#6F9815] focus:bg-[#537210]">
+                <span class="font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#FFFFFF] flex-none order-none grow-0">
+                    Ya, yakin
+                </span>
+            </button>
+        </div>
+    </div>
+    <!-- /End Pop up -->
+</body>
+</html>
