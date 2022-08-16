@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dpmr Beranda Comodity Change PopUp</title>
+    <link rel="icon" href="Aset/logo.png" type="image/png" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="style2.css"/>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+        extend: {
+            fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            },
+        }
+        }
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+ 
+</head>
+<body>
+    <!-- sidebar -->
+    <div class="fixed">
+      <aside class="w-[220px] absolute border-r box-border shadow-[-2px_0px_40px_rgba(0,0,0,0.04)]" aria-label="Sidebar">
+          <div class="py-4 rounded min-h-screen w-[220px]">
+              <a href="#" class="flex items-center pl-2.5 mb-5 w-[220px] h-[52px]">
+                  <img src="Aset/Logo-tandhur.svg" alt="Logo-tandhur" />
+              </a>
+              <div class="flex flex-col items-start p-[0px_24px] gap-2 w-[220px] h-[62px] flex-none order-1 self-stretch grow-0">
+                  <div class="flex flex-col items-start pt-[10px] pl-3 gap-1 w-[172px] h-[62px] bg-[#FFFFFF] border border-solid border-[rgba(185,185,185,0.2)] shadow-[0px_12px_32px_rgba(0,0,0,0.07)] rounded-lg flex-none order-none self-stretch grow-0">
+                      <div class="flex flex-row items-center p-0 gap-2 flex-none order-none self-stretch grow-0 w-[148px] h-[38px]">
+                          <div class="w-6 h-6 flex-none order-none grow-0 rounded-[40px] border-[0.8px] border-solid border-[#C13838] bg-[rgba(193,56,56,0.5)]">
+                              <p class="font-[Poppins] not-italic font-semibold text-[10px] leading-[18px] flex items-center text-center text-[#C13838] pl-[20.83%] pt-[10.42%]">
+                                  GP
+                              </p>
+                          </div>
+                          <div class="flex flex-col items-start p-0 flex-none order-1 grow">
+                              <div class="h-5 not-italic font-semibold text-sm flex items-center flex-none order-none self-stretch grow-0 text-[#151E03] font-[Poppins]">
+                                  Ganjar Pranowo
+                              </div>
+                              <div class="not-italic font-normal text-xs flex items-center flex-none order-1 self-stretch grow-0 w-[116px] h-[18px] font-[Inter] text-[#898989]">
+                                  Pemerintah
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            <ul class="space-y-2 pt-6">
+                <li class="hover:bg-lime-100 bg-[#DCEBBA]">
+                  <a href="#" class="ml-4 flex items-center p-2 text-base font-normal">
+                      <img src="Aset/home_alt_fill_green.svg" alt="home_alt_fill" class="h-5 w-5">
+                      <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#537210] flex-none">Beranda</span>
+                  </a>
+                </li>
+                <li class="hover:bg-lime-100">
+                  <a href="#" class="ml-4 flex items-center p-2 text-base font-normal">
+                      <img src="Aset/bar_chart.svg" alt="file_blank_fill" class="h-5 w-5">
+                      <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Produktivitas</span>
+                  </a>
+                </li>
+                <li>
+                  <div class="">
+                      <a href="#" class="ml-4 flex items-center p-2 w-full text-base font-normal transition duration-75 group">
+                          <img src="Aset/file_blank_fill.svg" alt="bar_chart" class="h-5 w-5">
+                          <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] pr-12">Laporan</span>
+                      </a>
+                  </div>
+                </li>
+            </ul>
+            <ul class="pt-4 mt-4 space-y-2 border-t border-gray-200 dark:border-gray-700">
+                <li class="hover:bg-lime-100">
+                  <a href="#" class="ml-4 flex items-center p-2 text-base font-normal text-gray-900 transition duration-75">
+                      <img src="Aset/refresh.svg" alt="refresh" class="h-5 w-5">
+                      <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Ubah kata sandi</span>
+                  </a>
+                </li>
+                <li class="hover:bg-lime-100">
+                  <a href="#" class="ml-4 flex items-center p-2 text-base font-normal text-gray-900 transition duration-75">
+                      <img src="Aset/exit.svg" alt="exit" class="h-5 w-5">
+                      <span class="ml-3 font-[Poppins] not-italic font-semibold text-sm flex items-center text-[#151E03] flex-none">Keluar</span>
+                  </a>
+                </li>
+            </ul>
+          </div>
+      </aside> 
+    </div>
+    <!-- sidebar end -->
+  
+
+    <!-- Ganti bagian FIXED menjadi RELATIVE pada "section class=" ketika memakai MODAL, Ubah menjadi RELATIVE jika TIDAK PAKAI MODAL -->
+
+    <!-- <section class="relative h-[100vh] left-[220px] w-[calc(100%-220px)]"> -->
+    <section class="fixed h-[100vh] left-[220px] w-[calc(100%-220px)]">
+        <div class="home-content">
+          <!-- breadcumb -->
+          <nav class="rounded-md w-full pl-[32px] pt-[32px]">
+            <ol class="list-reset flex">
+              <li><a href="#" class="font-['Inter'] not-italic font-[400] text-[12px] leading-[18px] text-[#6F9815]">Dashboard</a></li>
+              <li><span class="font-['Inter'] not-italic font-[400] text-[12px] leading-[18px] text-[#6F9815] ml-2 mr-2">
+                <img src="Aset/chevron_right_green.svg" class="w-[12px] h-[12px] mt-[-16px] ml-1 mr-1"></span></li>
+              <li><a href="#" class="font-['Inter'] not-italic font-[400] text-[12px] leading-[18px] text-[#6F9815]">Beranda</a></li>
+            </ol>
+          </nav>
+          <!-- breadcumb end -->
+
+          <p class="font-['Poppins'] not-italic font-[600] text-[24px] leading-9 text-[#151E03] pl-8 -mt-2">Beranda</p>
+
+          <!-- container pertama -->
+          <div class="bg-white shadow-[0px_8px_48px_rgba(0,0,0,0.08)] rounded-xl ml-8 mt-6 h-[110px] w-[calc(100%-63px)]">
+            <div class="w-[62px] h-[62px] bg-[#E7F2D1] rounded-lg ml-6 mt-6 absolute">
+                <img src="Aset/Archive_pemerintah.svg" class="w-8 h-8 m-[15px]">
+            </div>
+            <div class="flex pl-[102px] pt-6">
+                <p class="font-['Poppins'] not-italic font-[600] text-[20px] leading-7 text-[#151E03]">Panen hari ini</p>
+                <hr class="border-x border-y-[31px] rounded-[32px] border-[#EEEEEE] ml-[98.33px]">
+                <p class="font-['Poppins'] not-italic font-[600] text-[20px] leading-7 text-[#151E03] ml-8">Komoditas</p>
+                <hr class="border-x border-y-[31px] rounded-[32px] border-[#EEEEEE] ml-[171.33px]">
+                <p class="font-['Poppins'] not-italic font-[600] text-[20px] leading-7 text-[#151E03] ml-6">1000 Ton</p>
+            </div>
+            <div class="flex pl-[102px] mt-[-25px]">
+                <p class="font-['Inter'] not-italic font-[500] text-[18px] leading-[26px] text-[#898989]">
+                    Seluruh Jawa Tengah</p>
+                <div class="flex justify-center ml-[70px]">
+                    <div class="mb-3 xl:w-28">
+                        <select class="form-select appearance-none
+                            block
+                            w-full
+                            px-3
+                            bg-white bg-clip-padding bg-no-repeat
+                            border border-solid border-white
+                            rounded
+                            transition
+                            ease-in-out
+                            m-0
+                            focus:bg-white focus:outline-none focus:ring-0 focus:border-white
+                            font-['Inter'] not-italic font-[500] text-[18px] leading-[26px] text-[#618512]" aria-label="Default select example">
+                              <option selected>Padi</option>
+                              <option value="Karet">Karet</option>
+                              <option value="Jagung">Jagung</option>
+                              <option value="Kopi">Kopi</option>
+                        </select>
+                    </div>
+                </div>
+                <img src="Aset/Trending up.svg" class="w-5 h-5 ml-[206px] mr-1">
+                <p class="font-['Inter'] not-italic font-[500] text-[14px] leading-5 text-[#898989]">
+                   <strong class="font-['Poppins'] not-italic font-[600] text-[14px] leading-5 text-[#18B777]">2%</strong> Dibandingkan hari sebelumnya</p>
+            </div>
+          </div>
+          <!-- container pertama end-->
+
+          <!-- container peta -->
+          <div class="w-[996px] h-[411px] bg-white rounded-xl drop-shadow-[0px_8px_48px_rgba(0,0,0,0.08)] ml-8 mt-6 mr-8">
+            <!-- container layer peta -->
+            <div class="w-56 h-[395px] bg-white rounded-xl absolute left-2 top-2 p-4">
+                <p class="font-['Poppins'] not-italic font-[600] text-[14px] leading-5 text-[#151E03]">Layer Peta</p>
+                <div class="flex mt-4">
+                    <input type="checkbox" name="ingat" id="ingat" class="box-border w-4 h-4 bg-white border-[#E1E1E1] border-solid flex-none order-none grow-0 text-lime-600 focus:border-lime-500 focus:ring-white focus:ring-opacity-50 border-x border-y rounded-sm">
+                    <p class="font-['Inter'] not-italic font-[500] text-[12px] leading-[18px] text-[#151E03] ml-2">Administrasi Desa</p>
+                </div>
+                <div class="flex mt-3">
+                    <input type="checkbox" name="ingat" id="ingat" class="box-border w-4 h-4 bg-white border-[#E1E1E1] border-solid flex-none order-none grow-0 text-lime-600 focus:border-lime-500 focus:ring-white focus:ring-opacity-50 border-x border-y rounded-sm">
+                    <p class="font-['Inter'] not-italic font-[500] text-[12px] leading-[18px] text-[#151E03] ml-2">Posisi Tempat Tinggal Petani </p>
+                </div>
+                <div class="flex mt-4">
+                    <input type="checkbox" name="ingat" id="ingat" class="box-border w-4 h-4 bg-white border-[#E1E1E1] border-solid flex-none order-none grow-0 text-lime-600 focus:border-lime-500 focus:ring-white focus:ring-opacity-50 border-x border-y rounded-sm">
+                    <p class="font-['Inter'] not-italic font-[500] text-[12px] leading-[18px] text-[#151E03] ml-2">Peta Agri Sawah</p>
+                </div>
+                <div class="flex mt-4">
+                    <input type="checkbox" name="ingat" id="ingat" class="box-border w-4 h-4 bg-white border-[#E1E1E1] border-solid flex-none order-none grow-0 text-lime-600 focus:border-lime-500 focus:ring-white focus:ring-opacity-50 border-x border-y rounded-sm">
+                    <p class="font-['Inter'] not-italic font-[500] text-[12px] leading-[18px] text-[#151E03] ml-2">Peta Agri Ladang</p>
+                </div>
+                <div class="flex mt-4">
+                    <input type="checkbox" name="ingat" id="ingat" class="box-border w-4 h-4 bg-white border-[#E1E1E1] border-solid flex-none order-none grow-0 text-lime-600 focus:border-lime-500 focus:ring-white focus:ring-opacity-50 border-x border-y rounded-sm">
+                    <p class="font-['Inter'] not-italic font-[500] text-[12px] leading-[18px] text-[#151E03] ml-2">Peta Non Agri Semak Belukar</p>
+                </div>
+                <div class="flex mt-4">
+                    <input type="checkbox" name="ingat" id="ingat" class="box-border w-4 h-4 bg-white border-[#E1E1E1] border-solid flex-none order-none grow-0 text-lime-600 focus:border-lime-500 focus:ring-white focus:ring-opacity-50 border-x border-y rounded-sm">
+                    <p class="font-['Inter'] not-italic font-[500] text-[12px] leading-[18px] text-[#151E03] ml-2">Peta Non Agri Semak Kering</p>
+                </div>
+                <div class="flex mt-4">
+                    <input type="checkbox" name="ingat" id="ingat" class="box-border w-4 h-4 bg-white border-[#E1E1E1] border-solid flex-none order-none grow-0 text-lime-600 focus:border-lime-500 focus:ring-white focus:ring-opacity-50 border-x border-y rounded-sm">
+                    <p class="font-['Inter'] not-italic font-[500] text-[12px] leading-[18px] text-[#151E03] ml-2">Peta Non Agri Semak Basah</p>
+                </div>
+                <div class="flex mt-4">
+                    <input type="checkbox" name="ingat" id="ingat" class="box-border w-4 h-4 bg-white border-[#E1E1E1] border-solid flex-none order-none grow-0 text-lime-600 focus:border-lime-500 focus:ring-white focus:ring-opacity-50 border-x border-y rounded-sm">
+                    <p class="font-['Inter'] not-italic font-[500] text-[12px] leading-[18px] text-[#151E03] ml-2">Peta Non Agri Alang</p>
+                </div>
+                <div class="flex mt-4">
+                    <input type="checkbox" name="ingat" id="ingat" class="box-border w-4 h-4 bg-white border-[#E1E1E1] border-solid flex-none order-none grow-0 text-lime-600 focus:border-lime-500 focus:ring-white focus:ring-opacity-50 border-x border-y rounded-sm">
+                    <p class="font-['Inter'] not-italic font-[500] text-[12px] leading-[18px] text-[#151E03] ml-2">Peta Kesesuaian Lahan</p>
+                </div>
+                <div class="flex justify-center mt-6">
+                    <img src="Aset/chevron_up_green.svg" class="w-5 h-5 mr-[2px] mt-[-2px]">
+                    <a href="#">
+                        <p class="font-['Poppins'] not-italic font-[600] text-[12px] leading-[18px] text-[#618512]">Tutup Layer</p>
+                    </a>
+                </div>
+
+            </div>
+            <!-- container layer peta end-->
+            <!-- container expand layer peta -->
+            <div class="w-12 h-12 bg-white rounded-lg absolute left-[929px] top-[344px] p-2">
+                <a href="#">
+                    <img src="Aset/Arrows expand.svg" class="w-8 h-8">
+                </a>
+            </div>
+            <!-- container expand layer peta end -->
+            <img src="Aset/map_ds_pemerintah1.svg" class="rounded-xl" >
+          </div>
+          <!-- container peta end -->
+
+          <!-- container rekap laporan -->
+          <div class="flex">
+            <p class="font-['Poppins'] not-italic font-[600] text-[20px] leading-7 text-[#151E03] ml-8 mt-8">Rekap laporan</p>
+            <hr class="border-x border-y-[11px] rounded-[32px] border-[#EEEEEE] ml-3 mt-8">
+            <div class="flex justify-center mt-8">
+                <div class="mb-3 xl:w-32">
+                    <select class="form-select appearance-none
+                        block
+                        w-full
+                        px-3
+                        bg-white bg-clip-padding bg-no-repeat
+                        border border-solid border-white
+                        rounded
+                        transition
+                        ease-in-out
+                        m-0
+                       focus:bg-white focus:outline-none focus:ring-0 focus:border-white
+                        font-['Poppins'] not-italic font-[600] text-[18px] leading-[26px] text-[#618512]" aria-label="Default select example">
+                          <option selected>1 Bulan</option>
+                          <option value="1 Hari">1 Hari</option>
+                          <option value="1 Minggu">1 Minggu</option>
+                          <option value="1 Tahun">1 Tahun</option>
+                    </select>
+                </div>
+            </div>
+          </div>
+          <!-- container rekap laporan end -->
+
+          <!-- container kedua -->
+          <div class="flex">
+          <!-- grafik kabupaten -->
+            <div class="w-[486px] h-[440px] bg-white shadow-[0px_8px_48px_rgba(0,0,0,0.08)] rounded-xl ml-8 mt-6 p-6">
+                <p class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#151E03]">Kabupaten Dengan 
+                    Produksi Tertinggi</p>
+                <img src="Aset/grafik_kabupaten.svg" class="w-[438px] h-[352px] mt-4">
+            </div>
+          <!-- grafik kabupaten end -->
+          <!-- grafik komoditas -->
+            <div class="w-[486px] h-[440px] bg-white shadow-[0px_8px_48px_rgba(0,0,0,0.08)] rounded-xl ml-6 mt-6 p-6">
+                <p class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#151E03]">Komoditas produksi tertinggi</p>
+                <img src="Aset/grafik_komoditas.svg" class="w-[438px] h-[352px] mt-4">
+            </div>
+          <!-- grafik komoditas end -->
+          </div>
+          <!-- container kedua end -->
+
+          <!-- container ketiga -->
+          <div class="flex">
+            <!-- perbandingan harga pasaran -->
+            <div class="w-[486px] h-[224px] bg-white shadow-[0px_8px_48px_rgba(0,0,0,0.08)] rounded-xl ml-8 mt-6 p-6">
+                <p class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#151E03]">Harga di pasaran saat ini</p>
+                <div class="flex">
+                    <p class="font-['Inter'] not-italic font-[500] text-[14px] leading-5 text-[#898989]">Komoditas</p>
+                    <hr class="border-x border-y-[7px] rounded-[32px] border-[#EEEEEE] ml-4 mt-1">
+                    <div class="flex justify-center">
+                        <div class="mb-3 xl:w-24">
+                            <select class="form-select appearance-none
+                                block
+                                w-full
+                                px-3
+                                bg-white bg-clip-padding bg-no-repeat
+                                border border-solid border-white
+                                rounded
+                                transition
+                                ease-in-out
+                                m-0
+                               focus:bg-white focus:outline-none focus:ring-0 focus:border-white
+                                font-['Inter'] not-italic font-[500] text-[14px] leading-5 text-[#618512]" aria-label="Default select example">
+                                  <option selected>Padi</option>
+                                  <option value="Karet">Karet</option>
+                                  <option value="Jagung">Jagung</option>
+                                  <option value="Kopi">Kopi</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <p class="font-['Poppins'] not-italic font-[600] text-[40px] leading-[60px] text-[#151E03]">Rp5.000<strong class="font-['Inter'] not-italic font-[500] text-[32px] leading-[38.73px] text-[#151E03]">/kg</strong></p>
+                <div class="flex mt-3">
+                    <img src="Aset/Trending down.svg" class="w-6 h-6 mr-1">
+                    <p class="font-['Inter'] not-italic font-[500] text-[16px] leading-6 text-[#898989]">
+                    <strong class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#B51818]">15%</strong> Dibandingkan hari sebelumnya</p>
+                </div>
+            </div>
+            <!-- perbandingan harga pasaran end -->
+            <!-- grafik penggunaan lahan -->
+            <div class="w-[486px] h-[224px] bg-white shadow-[0px_8px_48px_rgba(0,0,0,0.08)] rounded-xl ml-6 mt-6 p-6">
+                <p class="font-['Poppins'] not-italic font-[600] text-[16px] leading-6 text-[#151E03]">Presentase penggunaan lahan</p>
+                <p class="font-['Inter'] not-italic font-[500] text-[14px] leading-5 text-[#898989]">Seluruh Jawa Tengah</p>
+                <img src="Aset/grafik_penggunaan_lahan.svg" class="w-28 h-28 mt-4 absolute">
+                <div class="w-[302px] h-[50px] bg-[#EBE7FF] rounded-lg p-3 mt-4 ml-[136px]">
+                    <p class="font-['Poppins'] not-italic font-[600] text-[18px] leading-[26px] text-[#2604C6]">60% Lahan Pertanian</p>
+                </div>
+                <div class="w-[302px] h-[50px] bg-[#FFF0EC] rounded-lg p-3 mt-3 ml-[136px]">
+                    <p class="font-['Poppins'] not-italic font-[600] text-[18px] leading-[26px] text-[#E98A6D]">40% Lahan Non Pertanian</p>
+                </div>
+            </div>
+            <!-- grafik penggunaan lahan end -->
+          </div>
+          <!-- container ketiga end -->
+
+
+
+        </div>
+    </section>
+
+
+    <!-- gelapin layar -->
+    <div class="absolute w-screen h-[100vh] left-0 top-0 bg-[#000000] opacity-50"></div>
+    <!-- gelapin layar end -->
+
+    <!-- ini bagian pop up modal -->
+    <div class="flex flex-col items-start p-8 gap-6 relative w-[448px] h-[560px] m-[0_auto] top-[106px] bg-[#FFFFFF] shadow-[0px_0px_32px_rgba(0,0,0,0.1)] rounded-xl overflow-y-scroll">
+        <p class="font-['Poppins'] not-italic font-[600] text-[24px] leading-9 text-[#151E03]">Ubah komoditas</p>
+        <!-- kontainer menurun kebawah -->
+        <div class="flex justify-center">
+            <div class="mb-3 xl:w-[356px]">
+                <!-- search -->
+                <div class="input-group relative flex flex-wrap items-stretch w-full mb-4 rounded">
+                    <input type="search" class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base bg-white bg-clip-padding border border-solid border-[#E1E1E1] rounded-[5px] transition ease-in-out m-0 focus:bg-white focus:border-[#7DAB18] focus:ring-0 focus:outline-none focus:rounded-md h-12 border-x border-y
+                    font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03]" 
+                    placeholder="Cari komoditas" aria-label="Search" aria-describedby="button-addon2">
+                </div>
+                <img src="Aset/Search.svg" class="w-5 h-5 ml-[366px] mt-[-48px]">
+                <!-- search end -->
+                <!-- data dummy -->
+                <div class="w-[356px] h-12 bg-[#DDF1B0] rounded-[5px] hover:bg-lime-100">
+                    <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03] mt-8 pl-3 pt-[14px]">Akar wangi</p>
+                </div>
+                <div class="w-[356px] h-12 rounded-[5px] hover:bg-lime-100">
+                    <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03] mt-1 pl-3 pt-[14px]">Anggur</p>
+                </div>
+                <div class="w-[356px] h-12 rounded-[5px] hover:bg-lime-100">
+                    <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03] mt-1 pl-3 pt-[14px]">Alpukat</p>
+                </div>
+                <div class="w-[356px] h-12 rounded-[5px] hover:bg-lime-100">
+                    <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03] mt-1 pl-3 pt-[14px]">Bawang Merah</p>
+                </div>
+                <div class="w-[356px] h-12 rounded-[5px] hover:bg-lime-100">
+                    <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03] mt-1 pl-3 pt-[14px]">Bawang Putih</p>
+                </div>
+                <div class="w-[356px] h-12 rounded-[5px] hover:bg-lime-100">
+                    <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03] mt-1 pl-3 pt-[14px]">Bayam</p>
+                </div>
+                <div class="w-[356px] h-12 rounded-[5px] hover:bg-lime-100">
+                    <p class="font-['Inter'] not-italic font-[400] text-[14px] leading-5 text-[#151E03] mt-1 pl-3 pt-[14px]">Belimbing</p>
+                </div>
+                <!-- data dummy end -->
+            </div>
+        </div>
+        <!-- kontainer menurun kebawah end -->
+
+        <!-- sticky button -->
+        <div class="fixed ml-48 mt-[527px]">
+            <div class="absolute w-[448px] h-[76px] left-[calc(50%-448px/2)] bottom-0 bg-white shadow-[0px_0px_32px_rgba(0,0,0,0.13)] rounded-b-xl">
+                <div class="flex ml-8 mt-4">
+                    <a href="" class="w-[184px] h-11 bg-[#D0E5A3] rounded-[5px] flex justify-center items-center
+                    font-['Poppins'] not-italic font-[600] text-[14px] leading-5 text-[#618512]">
+                        Batalkan
+                    </a>
+                    <a href="" class="w-[184px] h-11 bg-[#BFBFBF] rounded-[5px] flex justify-center items-center
+                    font-['Poppins'] not-italic font-[600] text-[14px] leading-5 text-[#FFFFFF] ml-4">
+                        Ubah
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- sticky button end -->
+    </div>
+    <!-- ini bagian pop up modal end -->
+
+
+</body>
+</html>
